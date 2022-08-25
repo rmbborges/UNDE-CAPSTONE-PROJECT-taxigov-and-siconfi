@@ -1,0 +1,2 @@
+[2022-08-25 11:16:07,427] {taskinstance.py:1173} INFO - Dependencies not met for <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T11:16:03.984820+00:00 [queued]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'total': 1, 'successes': 0, 'skipped': 0, 'failed': 0, 'upstream_failed': 0, 'done': 0}, upstream_task_ids={'create_taxigov_raw_table'}
+[2022-08-25 11:16:07,429] {local_task_job.py:101} INFO - Task is not able to be run

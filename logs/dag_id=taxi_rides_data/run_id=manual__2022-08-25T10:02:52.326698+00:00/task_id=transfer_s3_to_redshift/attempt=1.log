@@ -1,0 +1,48 @@
+[2022-08-25 10:02:53,327] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T10:02:52.326698+00:00 [queued]>
+[2022-08-25 10:02:53,337] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T10:02:52.326698+00:00 [queued]>
+[2022-08-25 10:02:53,337] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 10:02:53,337] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-25 10:02:53,337] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 10:02:53,498] {taskinstance.py:1397} INFO - Executing <Task(S3ToRedshiftOperator): transfer_s3_to_redshift> on 2022-08-25 10:02:52.326698+00:00
+[2022-08-25 10:02:53,505] {standard_task_runner.py:52} INFO - Started process 3837 to run task
+[2022-08-25 10:02:53,509] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'taxi_rides_data', 'transfer_s3_to_redshift', 'manual__2022-08-25T10:02:52.326698+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/taxi_rides_dag.py', '--cfg-path', '/tmp/tmpv67x028e', '--error-file', '/tmp/tmp2i9_pxr9']
+[2022-08-25 10:02:53,510] {standard_task_runner.py:80} INFO - Job 61: Subtask transfer_s3_to_redshift
+[2022-08-25 10:02:53,594] {task_command.py:371} INFO - Running <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T10:02:52.326698+00:00 [running]> on host ddc8002727e0
+[2022-08-25 10:02:53,680] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=taxi_rides_data
+AIRFLOW_CTX_TASK_ID=transfer_s3_to_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-25T10:02:52.326698+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-25T10:02:52.326698+00:00
+[2022-08-25 10:02:53,690] {base.py:68} INFO - Using connection ID 'redshift_default' for task execution.
+[2022-08-25 10:02:53,697] {base.py:68} INFO - Using connection ID 'redshift_default' for task execution.
+[2022-08-25 10:02:53,697] {base_aws.py:206} INFO - Credentials retrieved from login
+[2022-08-25 10:02:53,712] {s3_to_redshift.py:167} INFO - Executing COPY command...
+[2022-08-25 10:02:53,718] {base.py:68} INFO - Using connection ID 'redshift_default' for task execution.
+[2022-08-25 10:03:04,119] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/core.py", line 585, in __init__
+    self._usock.connect((host, port))
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/transfers/s3_to_redshift.py", line 168, in execute
+    redshift_hook.run(sql, autocommit=self.autocommit)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 204, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/redshift_sql.py", line 133, in get_conn
+    return redshift_connector.connect(**conn_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/__init__.py", line 360, in connect
+    numeric_to_float=info.numeric_to_float,
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/core.py", line 632, in __init__
+    raise InterfaceError("communication error", e)
+redshift_connector.error.InterfaceError: ('communication error', gaierror(-3, 'Temporary failure in name resolution'))
+[2022-08-25 10:03:04,127] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=taxi_rides_data, task_id=transfer_s3_to_redshift, execution_date=20220825T100252, start_date=20220825T100253, end_date=20220825T100304
+[2022-08-25 10:03:04,139] {standard_task_runner.py:97} ERROR - Failed to execute job 61 for task transfer_s3_to_redshift (('communication error', gaierror(-3, 'Temporary failure in name resolution')); 3837)
+[2022-08-25 10:03:04,188] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-08-25 10:03:04,214] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

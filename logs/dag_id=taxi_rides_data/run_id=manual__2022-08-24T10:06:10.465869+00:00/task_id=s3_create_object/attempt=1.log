@@ -1,0 +1,54 @@
+[2022-08-24 10:06:19,142] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: taxi_rides_data.s3_create_object manual__2022-08-24T10:06:10.465869+00:00 [queued]>
+[2022-08-24 10:06:19,150] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: taxi_rides_data.s3_create_object manual__2022-08-24T10:06:10.465869+00:00 [queued]>
+[2022-08-24 10:06:19,150] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-24 10:06:19,150] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-24 10:06:19,150] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-24 10:06:19,160] {taskinstance.py:1397} INFO - Executing <Task(S3CreateObjectOperator): s3_create_object> on 2022-08-24 10:06:10.465869+00:00
+[2022-08-24 10:06:19,165] {standard_task_runner.py:52} INFO - Started process 5615 to run task
+[2022-08-24 10:06:19,167] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'taxi_rides_data', 's3_create_object', 'manual__2022-08-24T10:06:10.465869+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/taxi_rides_dag.py', '--cfg-path', '/tmp/tmp_gryb036', '--error-file', '/tmp/tmpnaso4r_g']
+[2022-08-24 10:06:19,167] {standard_task_runner.py:80} INFO - Job 17: Subtask s3_create_object
+[2022-08-24 10:06:19,206] {task_command.py:371} INFO - Running <TaskInstance: taxi_rides_data.s3_create_object manual__2022-08-24T10:06:10.465869+00:00 [running]> on host ddc8002727e0
+[2022-08-24 10:06:25,331] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=taxi_rides_data
+AIRFLOW_CTX_TASK_ID=s3_create_object
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-24T10:06:10.465869+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-24T10:06:10.465869+00:00
+[2022-08-24 10:06:26,496] {base.py:68} INFO - Using connection ID 'aws_credentials' for task execution.
+[2022-08-24 10:06:26,497] {base_aws.py:206} INFO - Credentials retrieved from login
+[2022-08-24 10:06:28,478] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/operators/s3.py", line 410, in execute
+    s3_hook.load_bytes(self.data, s3_key, s3_bucket, self.replace, self.encrypt, self.acl_policy)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 63, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 91, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 691, in load_bytes
+    self._upload_file_obj(file_obj, key, bucket_name, replace, encrypt, acl_policy)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 744, in _upload_file_obj
+    Config=self.transfer_config,
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/s3/inject.py", line 636, in upload_fileobj
+    return future.result()
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/futures.py", line 103, in result
+    return self._coordinator.result()
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/futures.py", line 266, in result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/tasks.py", line 139, in __call__
+    return self._execute_main(kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/tasks.py", line 162, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/tasks.py", line 349, in _main
+    Bucket=bucket, Key=key, **extra_args
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 508, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 915, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InvalidAccessKeyId) when calling the CreateMultipartUpload operation: The AWS Access Key Id you provided does not exist in our records.
+[2022-08-24 10:06:28,493] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=taxi_rides_data, task_id=s3_create_object, execution_date=20220824T100610, start_date=20220824T100619, end_date=20220824T100628
+[2022-08-24 10:06:28,509] {standard_task_runner.py:97} ERROR - Failed to execute job 17 for task s3_create_object (An error occurred (InvalidAccessKeyId) when calling the CreateMultipartUpload operation: The AWS Access Key Id you provided does not exist in our records.; 5615)
+[2022-08-24 10:06:28,566] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-08-24 10:06:28,594] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

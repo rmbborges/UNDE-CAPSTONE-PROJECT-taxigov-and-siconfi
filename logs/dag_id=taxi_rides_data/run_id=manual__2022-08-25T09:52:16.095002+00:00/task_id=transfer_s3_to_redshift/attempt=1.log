@@ -1,0 +1,46 @@
+[2022-08-25 09:52:31,839] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T09:52:16.095002+00:00 [queued]>
+[2022-08-25 09:52:31,849] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T09:52:16.095002+00:00 [queued]>
+[2022-08-25 09:52:31,850] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 09:52:31,850] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-25 09:52:31,850] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 09:52:31,865] {taskinstance.py:1397} INFO - Executing <Task(S3ToRedshiftOperator): transfer_s3_to_redshift> on 2022-08-25 09:52:16.095002+00:00
+[2022-08-25 09:52:31,875] {standard_task_runner.py:52} INFO - Started process 3343 to run task
+[2022-08-25 09:52:31,878] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'taxi_rides_data', 'transfer_s3_to_redshift', 'manual__2022-08-25T09:52:16.095002+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/taxi_rides_dag.py', '--cfg-path', '/tmp/tmprjes_j_d', '--error-file', '/tmp/tmpek3d_3he']
+[2022-08-25 09:52:31,879] {standard_task_runner.py:80} INFO - Job 54: Subtask transfer_s3_to_redshift
+[2022-08-25 09:52:31,945] {task_command.py:371} INFO - Running <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T09:52:16.095002+00:00 [running]> on host ddc8002727e0
+[2022-08-25 09:52:32,024] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=taxi_rides_data
+AIRFLOW_CTX_TASK_ID=transfer_s3_to_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-25T09:52:16.095002+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-25T09:52:16.095002+00:00
+[2022-08-25 09:52:32,035] {base.py:68} INFO - Using connection ID 'redshift' for task execution.
+[2022-08-25 09:52:32,041] {base.py:68} INFO - Using connection ID 'redshift' for task execution.
+[2022-08-25 09:52:32,041] {base_aws.py:206} INFO - Credentials retrieved from login
+[2022-08-25 09:52:32,056] {s3_to_redshift.py:167} INFO - Executing COPY command...
+[2022-08-25 09:52:32,354] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/transfers/s3_to_redshift.py", line 168, in execute
+    redshift_hook.run(sql, autocommit=self.autocommit)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 204, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/redshift_sql.py", line 130, in get_conn
+    conn_params = self._get_conn_params()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/redshift_sql.py", line 67, in _get_conn_params
+    conn = self.conn
+  File "/home/airflow/.local/lib/python3.7/site-packages/cached_property.py", line 36, in __get__
+    value = obj.__dict__[self.func.__name__] = self.func(obj)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/redshift_sql.py", line 63, in conn
+    return self.get_connection(self.redshift_conn_id)  # type: ignore[attr-defined]
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift_default` isn't defined
+[2022-08-25 09:52:32,359] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=taxi_rides_data, task_id=transfer_s3_to_redshift, execution_date=20220825T095216, start_date=20220825T095231, end_date=20220825T095232
+[2022-08-25 09:52:32,372] {standard_task_runner.py:97} ERROR - Failed to execute job 54 for task transfer_s3_to_redshift (The conn_id `redshift_default` isn't defined; 3343)
+[2022-08-25 09:52:32,410] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-08-25 09:52:32,443] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,50 @@
+[2022-08-25 10:49:18,802] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T10:49:17.772283+00:00 [queued]>
+[2022-08-25 10:49:18,813] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T10:49:17.772283+00:00 [queued]>
+[2022-08-25 10:49:18,813] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 10:49:18,813] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-25 10:49:18,813] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 10:49:18,981] {taskinstance.py:1397} INFO - Executing <Task(S3ToRedshiftOperator): transfer_s3_to_redshift> on 2022-08-25 10:49:17.772283+00:00
+[2022-08-25 10:49:18,987] {standard_task_runner.py:52} INFO - Started process 5956 to run task
+[2022-08-25 10:49:18,990] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'taxi_rides_data', 'transfer_s3_to_redshift', 'manual__2022-08-25T10:49:17.772283+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/taxi_rides_dag.py', '--cfg-path', '/tmp/tmpreo8oora', '--error-file', '/tmp/tmpm7js4qqo']
+[2022-08-25 10:49:18,991] {standard_task_runner.py:80} INFO - Job 63: Subtask transfer_s3_to_redshift
+[2022-08-25 10:49:19,058] {task_command.py:371} INFO - Running <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T10:49:17.772283+00:00 [running]> on host ddc8002727e0
+[2022-08-25 10:49:19,144] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=taxi_rides_data
+AIRFLOW_CTX_TASK_ID=transfer_s3_to_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-25T10:49:17.772283+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-25T10:49:17.772283+00:00
+[2022-08-25 10:49:19,156] {base.py:68} INFO - Using connection ID 'redshift_default' for task execution.
+[2022-08-25 10:49:19,163] {base.py:68} INFO - Using connection ID 'redshift_default' for task execution.
+[2022-08-25 10:49:19,163] {base_aws.py:206} INFO - Credentials retrieved from login
+[2022-08-25 10:49:19,179] {s3_to_redshift.py:167} INFO - Executing COPY command...
+[2022-08-25 10:49:19,185] {base.py:68} INFO - Using connection ID 'redshift_default' for task execution.
+[2022-08-25 10:49:20,717] {dbapi.py:231} INFO - Running statement: 
+                    COPY PUBLIC.raw__taxigov_corridas 
+                    FROM 's3://brazilian-politicians-taxi-rides/taxigov_corridas.csv'
+                    credentials
+                    'aws_access_key_id=awsuser;aws_secret_access_key=***'
+                    csv;
+        , parameters: None
+[2022-08-25 10:49:21,537] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/transfers/s3_to_redshift.py", line 168, in execute
+    redshift_hook.run(sql, autocommit=self.autocommit)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 211, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 235, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/cursor.py", line 240, in execute
+    self._c.execute(self, operation, args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/core.py", line 1783, in execute
+    self.handle_messages(cursor)
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/core.py", line 1969, in handle_messages
+    raise self.error
+redshift_connector.error.ProgrammingError: {'S': 'ERROR', 'C': 'XX000', 'M': 'Cannot COPY into nonexistent table raw__taxigov_corridas', 'F': '../src/sys/compression_analyzer.cpp', 'L': '520', 'R': 'XenGetLoadTableId'}
+[2022-08-25 10:49:21,560] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=taxi_rides_data, task_id=transfer_s3_to_redshift, execution_date=20220825T104917, start_date=20220825T104918, end_date=20220825T104921
+[2022-08-25 10:49:21,589] {standard_task_runner.py:97} ERROR - Failed to execute job 63 for task transfer_s3_to_redshift ({'S': 'ERROR', 'C': 'XX000', 'M': 'Cannot COPY into nonexistent table raw__taxigov_corridas', 'F': '../src/sys/compression_analyzer.cpp', 'L': '520', 'R': 'XenGetLoadTableId'}; 5956)
+[2022-08-25 10:49:21,610] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-08-25 10:49:21,648] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

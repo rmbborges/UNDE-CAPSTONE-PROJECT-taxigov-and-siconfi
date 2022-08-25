@@ -1,0 +1,850 @@
+[2022-08-24 09:02:12,188] {processor.py:153} INFO - Started process (PID=5885) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:02:12,189] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:02:12,189] {logging_mixin.py:115} INFO - [2022-08-24 09:02:12,189] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:02:12,908] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:02:12,915] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.729 seconds
+[2022-08-24 09:02:43,358] {processor.py:153} INFO - Started process (PID=5939) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:02:43,358] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:02:43,359] {logging_mixin.py:115} INFO - [2022-08-24 09:02:43,359] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:02:43,520] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:02:43,528] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.172 seconds
+[2022-08-24 09:03:13,664] {processor.py:153} INFO - Started process (PID=6001) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:03:13,670] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:03:13,671] {logging_mixin.py:115} INFO - [2022-08-24 09:03:13,671] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:03:13,833] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:03:13,840] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.178 seconds
+[2022-08-24 09:03:44,751] {processor.py:153} INFO - Started process (PID=6064) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:03:44,757] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:03:44,758] {logging_mixin.py:115} INFO - [2022-08-24 09:03:44,758] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:03:44,943] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:03:44,951] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.202 seconds
+[2022-08-24 09:04:15,032] {processor.py:153} INFO - Started process (PID=6127) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:04:15,037] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:04:15,037] {logging_mixin.py:115} INFO - [2022-08-24 09:04:15,037] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:04:15,218] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:04:15,226] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.196 seconds
+[2022-08-24 09:04:46,185] {processor.py:153} INFO - Started process (PID=6180) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:04:46,191] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:04:46,191] {logging_mixin.py:115} INFO - [2022-08-24 09:04:46,191] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:04:46,378] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:04:46,387] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.204 seconds
+[2022-08-24 09:05:16,449] {processor.py:153} INFO - Started process (PID=6244) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:05:16,454] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:05:16,454] {logging_mixin.py:115} INFO - [2022-08-24 09:05:16,454] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:05:16,614] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:05:16,622] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.175 seconds
+[2022-08-24 09:05:47,562] {processor.py:153} INFO - Started process (PID=6307) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:05:47,562] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:05:47,562] {logging_mixin.py:115} INFO - [2022-08-24 09:05:47,562] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:05:47,721] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:05:47,729] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.168 seconds
+[2022-08-24 09:06:17,750] {processor.py:153} INFO - Started process (PID=6371) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:06:17,751] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:06:17,751] {logging_mixin.py:115} INFO - [2022-08-24 09:06:17,751] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:06:17,907] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:06:17,915] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.166 seconds
+[2022-08-24 09:06:48,804] {processor.py:153} INFO - Started process (PID=6434) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:06:48,805] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:06:48,805] {logging_mixin.py:115} INFO - [2022-08-24 09:06:48,805] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:06:48,976] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:06:49,001] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.198 seconds
+[2022-08-24 09:07:19,077] {processor.py:153} INFO - Started process (PID=6488) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:07:19,082] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:07:19,084] {logging_mixin.py:115} INFO - [2022-08-24 09:07:19,083] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:07:19,277] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:07:19,286] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.211 seconds
+[2022-08-24 09:07:50,197] {processor.py:153} INFO - Started process (PID=6552) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:07:50,203] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:07:50,204] {logging_mixin.py:115} INFO - [2022-08-24 09:07:50,204] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:07:50,365] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:07:50,373] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.177 seconds
+[2022-08-24 09:08:20,450] {processor.py:153} INFO - Started process (PID=6615) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:08:20,456] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:08:20,457] {logging_mixin.py:115} INFO - [2022-08-24 09:08:20,457] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:08:20,612] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:08:20,620] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.172 seconds
+[2022-08-24 09:08:50,645] {processor.py:153} INFO - Started process (PID=6678) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:08:50,650] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:08:50,652] {logging_mixin.py:115} INFO - [2022-08-24 09:08:50,651] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:08:50,811] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:08:50,819] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.176 seconds
+[2022-08-24 09:09:20,954] {processor.py:153} INFO - Started process (PID=6731) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:09:20,959] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:09:20,961] {logging_mixin.py:115} INFO - [2022-08-24 09:09:20,960] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:09:21,121] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:09:21,128] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.176 seconds
+[2022-08-24 09:09:51,202] {processor.py:153} INFO - Started process (PID=6794) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:09:51,208] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:09:51,209] {logging_mixin.py:115} INFO - [2022-08-24 09:09:51,208] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:09:51,417] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:09:51,426] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.225 seconds
+[2022-08-24 09:10:22,287] {processor.py:153} INFO - Started process (PID=6857) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:10:22,293] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:10:22,294] {logging_mixin.py:115} INFO - [2022-08-24 09:10:22,294] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:10:22,454] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:10:22,462] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.177 seconds
+[2022-08-24 09:10:52,493] {processor.py:153} INFO - Started process (PID=6920) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:10:52,499] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:10:52,499] {logging_mixin.py:115} INFO - [2022-08-24 09:10:52,499] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:10:52,664] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:10:52,672] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.180 seconds
+[2022-08-24 09:11:23,613] {processor.py:153} INFO - Started process (PID=6974) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:11:23,618] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:11:23,618] {logging_mixin.py:115} INFO - [2022-08-24 09:11:23,618] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:11:23,781] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:11:23,789] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.178 seconds
+[2022-08-24 09:11:54,729] {processor.py:153} INFO - Started process (PID=7037) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:11:54,735] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:11:54,735] {logging_mixin.py:115} INFO - [2022-08-24 09:11:54,735] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:11:54,897] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:11:54,905] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.178 seconds
+[2022-08-24 09:12:24,920] {processor.py:153} INFO - Started process (PID=7100) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:12:24,926] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:12:24,927] {logging_mixin.py:115} INFO - [2022-08-24 09:12:24,927] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:12:25,085] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:12:25,093] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.174 seconds
+[2022-08-24 09:12:55,116] {processor.py:153} INFO - Started process (PID=7163) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:12:55,122] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:12:55,122] {logging_mixin.py:115} INFO - [2022-08-24 09:12:55,122] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:12:55,288] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:12:55,296] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.181 seconds
+[2022-08-24 09:13:25,321] {processor.py:153} INFO - Started process (PID=7217) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:13:25,326] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:13:25,327] {logging_mixin.py:115} INFO - [2022-08-24 09:13:25,327] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:13:25,498] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:13:25,514] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.195 seconds
+[2022-08-24 09:13:56,399] {processor.py:153} INFO - Started process (PID=7280) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:13:56,404] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:13:56,405] {logging_mixin.py:115} INFO - [2022-08-24 09:13:56,405] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:13:56,561] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:13:56,569] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.172 seconds
+[2022-08-24 09:14:26,609] {processor.py:153} INFO - Started process (PID=7343) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:14:26,615] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:14:26,616] {logging_mixin.py:115} INFO - [2022-08-24 09:14:26,616] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:14:26,787] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:14:26,795] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.189 seconds
+[2022-08-24 09:14:57,705] {processor.py:153} INFO - Started process (PID=7406) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:14:57,710] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:14:57,711] {logging_mixin.py:115} INFO - [2022-08-24 09:14:57,711] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:14:57,871] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:14:57,879] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.176 seconds
+[2022-08-24 09:15:27,903] {processor.py:153} INFO - Started process (PID=7469) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:15:27,906] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:15:27,907] {logging_mixin.py:115} INFO - [2022-08-24 09:15:27,907] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:15:28,077] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:15:28,085] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.184 seconds
+[2022-08-24 09:15:58,169] {processor.py:153} INFO - Started process (PID=7522) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:15:58,174] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:15:58,174] {logging_mixin.py:115} INFO - [2022-08-24 09:15:58,174] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:15:58,351] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:15:58,362] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.196 seconds
+[2022-08-24 09:16:28,468] {processor.py:153} INFO - Started process (PID=7585) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:16:28,474] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:16:28,474] {logging_mixin.py:115} INFO - [2022-08-24 09:16:28,474] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:16:28,643] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:16:28,652] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.186 seconds
+[2022-08-24 09:16:58,788] {processor.py:153} INFO - Started process (PID=7648) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:16:58,789] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:16:58,790] {logging_mixin.py:115} INFO - [2022-08-24 09:16:58,790] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:16:58,973] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:16:58,981] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.201 seconds
+[2022-08-24 09:17:29,105] {processor.py:153} INFO - Started process (PID=7709) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:17:29,105] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:17:29,105] {logging_mixin.py:115} INFO - [2022-08-24 09:17:29,105] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:17:29,283] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:17:29,291] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.189 seconds
+[2022-08-24 09:17:59,341] {processor.py:153} INFO - Started process (PID=7765) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:17:59,346] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:17:59,346] {logging_mixin.py:115} INFO - [2022-08-24 09:17:59,346] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:17:59,516] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:17:59,525] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.186 seconds
+[2022-08-24 09:18:29,659] {processor.py:153} INFO - Started process (PID=7827) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:18:29,664] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:18:29,665] {logging_mixin.py:115} INFO - [2022-08-24 09:18:29,665] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:18:29,830] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:18:29,839] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.182 seconds
+[2022-08-24 09:18:59,975] {processor.py:153} INFO - Started process (PID=7890) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:18:59,980] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:18:59,980] {logging_mixin.py:115} INFO - [2022-08-24 09:18:59,980] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:19:00,185] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:19:00,194] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.221 seconds
+[2022-08-24 09:19:31,156] {processor.py:153} INFO - Started process (PID=7951) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:19:31,156] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:19:31,157] {logging_mixin.py:115} INFO - [2022-08-24 09:19:31,157] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:19:31,309] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:19:31,318] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.164 seconds
+[2022-08-24 09:20:01,370] {processor.py:153} INFO - Started process (PID=8007) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:20:01,371] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:20:01,371] {logging_mixin.py:115} INFO - [2022-08-24 09:20:01,371] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:20:01,549] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:20:01,558] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.189 seconds
+[2022-08-24 09:20:31,742] {processor.py:153} INFO - Started process (PID=8069) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:20:31,748] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:20:31,749] {logging_mixin.py:115} INFO - [2022-08-24 09:20:31,749] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:20:31,984] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:20:31,994] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.254 seconds
+[2022-08-24 09:21:02,034] {processor.py:153} INFO - Started process (PID=8132) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:21:02,039] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:21:02,041] {logging_mixin.py:115} INFO - [2022-08-24 09:21:02,040] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:21:02,263] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:21:02,271] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.239 seconds
+[2022-08-24 09:21:33,142] {processor.py:153} INFO - Started process (PID=8186) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:21:33,148] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:21:33,148] {logging_mixin.py:115} INFO - [2022-08-24 09:21:33,148] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:21:33,330] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:21:33,339] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.199 seconds
+[2022-08-24 09:22:03,444] {processor.py:153} INFO - Started process (PID=8249) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:22:03,449] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:22:03,450] {logging_mixin.py:115} INFO - [2022-08-24 09:22:03,450] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:22:03,632] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:22:03,642] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.199 seconds
+[2022-08-24 09:22:33,715] {processor.py:153} INFO - Started process (PID=8313) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:22:33,720] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:22:33,722] {logging_mixin.py:115} INFO - [2022-08-24 09:22:33,721] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:22:33,897] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:22:33,905] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.193 seconds
+[2022-08-24 09:23:03,939] {processor.py:153} INFO - Started process (PID=8376) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:23:03,945] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:23:03,945] {logging_mixin.py:115} INFO - [2022-08-24 09:23:03,945] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:23:04,117] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:23:04,125] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.188 seconds
+[2022-08-24 09:23:34,153] {processor.py:153} INFO - Started process (PID=8430) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:23:34,153] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:23:34,153] {logging_mixin.py:115} INFO - [2022-08-24 09:23:34,153] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:23:34,331] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:23:34,339] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.188 seconds
+[2022-08-24 09:24:04,397] {processor.py:153} INFO - Started process (PID=8496) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:24:04,397] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:24:04,398] {logging_mixin.py:115} INFO - [2022-08-24 09:24:04,398] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:24:04,550] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:24:04,560] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.165 seconds
+[2022-08-24 09:24:34,621] {processor.py:153} INFO - Started process (PID=8559) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:24:34,621] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:24:34,621] {logging_mixin.py:115} INFO - [2022-08-24 09:24:34,621] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:24:34,796] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:24:34,804] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.185 seconds
+[2022-08-24 09:25:04,894] {processor.py:153} INFO - Started process (PID=8623) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:25:04,894] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:25:04,894] {logging_mixin.py:115} INFO - [2022-08-24 09:25:04,894] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:25:05,062] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:25:05,071] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.179 seconds
+[2022-08-24 09:25:36,020] {processor.py:153} INFO - Started process (PID=8677) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:25:36,021] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:25:36,021] {logging_mixin.py:115} INFO - [2022-08-24 09:25:36,021] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:25:36,226] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:25:36,235] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.217 seconds
+[2022-08-24 09:26:06,260] {processor.py:153} INFO - Started process (PID=8740) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:26:06,261] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:26:06,261] {logging_mixin.py:115} INFO - [2022-08-24 09:26:06,261] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:26:06,435] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:26:06,444] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.185 seconds
+[2022-08-24 09:26:36,463] {processor.py:153} INFO - Started process (PID=8805) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:26:36,463] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:26:36,464] {logging_mixin.py:115} INFO - [2022-08-24 09:26:36,464] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:26:36,648] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:26:36,660] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.199 seconds
+[2022-08-24 09:27:06,835] {processor.py:153} INFO - Started process (PID=8871) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:27:06,836] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:27:06,836] {logging_mixin.py:115} INFO - [2022-08-24 09:27:06,836] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:27:07,010] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:27:07,018] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.184 seconds
+[2022-08-24 09:27:37,067] {processor.py:153} INFO - Started process (PID=8925) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:27:37,067] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:27:37,067] {logging_mixin.py:115} INFO - [2022-08-24 09:27:37,067] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:27:37,244] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:27:37,252] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.187 seconds
+[2022-08-24 09:28:07,350] {processor.py:153} INFO - Started process (PID=8989) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:28:07,351] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:28:07,351] {logging_mixin.py:115} INFO - [2022-08-24 09:28:07,351] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:28:07,519] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:28:07,527] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.179 seconds
+[2022-08-24 09:28:37,691] {processor.py:153} INFO - Started process (PID=9053) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:28:37,692] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:28:37,692] {logging_mixin.py:115} INFO - [2022-08-24 09:28:37,692] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:28:37,877] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:28:37,887] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.197 seconds
+[2022-08-24 09:29:07,964] {processor.py:153} INFO - Started process (PID=9114) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:29:07,965] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:29:07,965] {logging_mixin.py:115} INFO - [2022-08-24 09:29:07,965] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:29:08,161] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:29:08,170] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.208 seconds
+[2022-08-24 09:29:38,293] {processor.py:153} INFO - Started process (PID=9171) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:29:38,294] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:29:38,294] {logging_mixin.py:115} INFO - [2022-08-24 09:29:38,294] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:29:38,463] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:29:38,471] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.179 seconds
+[2022-08-24 09:30:08,511] {processor.py:153} INFO - Started process (PID=9235) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:30:08,511] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:30:08,512] {logging_mixin.py:115} INFO - [2022-08-24 09:30:08,512] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:30:08,693] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:30:08,701] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.192 seconds
+[2022-08-24 09:30:39,650] {processor.py:153} INFO - Started process (PID=9298) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:30:39,656] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:30:39,656] {logging_mixin.py:115} INFO - [2022-08-24 09:30:39,656] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:30:39,873] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:30:39,882] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.233 seconds
+[2022-08-24 09:31:10,081] {processor.py:153} INFO - Started process (PID=9362) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:31:10,081] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:31:10,082] {logging_mixin.py:115} INFO - [2022-08-24 09:31:10,082] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:31:10,297] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:31:10,307] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.228 seconds
+[2022-08-24 09:31:40,480] {processor.py:153} INFO - Started process (PID=9420) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:31:40,480] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:31:40,480] {logging_mixin.py:115} INFO - [2022-08-24 09:31:40,480] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:31:40,672] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:31:40,680] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.203 seconds
+[2022-08-24 09:32:10,746] {processor.py:153} INFO - Started process (PID=9478) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:32:10,746] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:32:10,748] {logging_mixin.py:115} INFO - [2022-08-24 09:32:10,748] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:32:10,952] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:32:10,960] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.222 seconds
+[2022-08-24 09:32:40,977] {processor.py:153} INFO - Started process (PID=9541) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:32:40,978] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:32:40,978] {logging_mixin.py:115} INFO - [2022-08-24 09:32:40,978] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:32:41,197] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:32:41,209] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.235 seconds
+[2022-08-24 09:33:11,442] {processor.py:153} INFO - Started process (PID=9595) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:33:11,448] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:33:11,450] {logging_mixin.py:115} INFO - [2022-08-24 09:33:11,450] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:33:11,669] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:33:11,678] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.245 seconds
+[2022-08-24 09:33:41,754] {processor.py:153} INFO - Started process (PID=9659) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:33:41,759] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:33:41,759] {logging_mixin.py:115} INFO - [2022-08-24 09:33:41,759] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:33:41,932] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:33:41,940] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.188 seconds
+[2022-08-24 09:34:11,999] {processor.py:153} INFO - Started process (PID=9721) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:34:11,999] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:34:12,000] {logging_mixin.py:115} INFO - [2022-08-24 09:34:12,000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:34:12,169] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:34:12,178] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.182 seconds
+[2022-08-24 09:34:42,318] {processor.py:153} INFO - Started process (PID=9785) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:34:42,324] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:34:42,324] {logging_mixin.py:115} INFO - [2022-08-24 09:34:42,324] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:34:42,527] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:34:42,537] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.222 seconds
+[2022-08-24 09:35:12,658] {processor.py:153} INFO - Started process (PID=9839) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:35:12,658] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:35:12,659] {logging_mixin.py:115} INFO - [2022-08-24 09:35:12,659] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:35:12,849] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:35:12,859] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.203 seconds
+[2022-08-24 09:35:42,932] {processor.py:153} INFO - Started process (PID=9901) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:35:42,932] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:35:42,933] {logging_mixin.py:115} INFO - [2022-08-24 09:35:42,932] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:35:43,111] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:35:43,119] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.190 seconds
+[2022-08-24 09:36:13,182] {processor.py:153} INFO - Started process (PID=9964) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:36:13,187] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:36:13,188] {logging_mixin.py:115} INFO - [2022-08-24 09:36:13,187] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:36:13,378] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:36:13,389] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.209 seconds
+[2022-08-24 09:36:43,529] {processor.py:153} INFO - Started process (PID=10024) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:36:43,529] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:36:43,530] {logging_mixin.py:115} INFO - [2022-08-24 09:36:43,530] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:36:43,711] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:36:43,721] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.194 seconds
+[2022-08-24 09:37:13,770] {processor.py:153} INFO - Started process (PID=10081) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:37:13,775] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:37:13,776] {logging_mixin.py:115} INFO - [2022-08-24 09:37:13,775] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:37:13,947] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:37:13,956] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.193 seconds
+[2022-08-24 09:37:44,094] {processor.py:153} INFO - Started process (PID=10144) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:37:44,100] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:37:44,101] {logging_mixin.py:115} INFO - [2022-08-24 09:37:44,101] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:37:44,306] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:37:44,315] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.229 seconds
+[2022-08-24 09:38:14,375] {processor.py:153} INFO - Started process (PID=10206) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:38:14,381] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:38:14,383] {logging_mixin.py:115} INFO - [2022-08-24 09:38:14,382] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:38:14,577] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:38:14,585] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.217 seconds
+[2022-08-24 09:38:44,668] {processor.py:153} INFO - Started process (PID=10260) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:38:44,668] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:38:44,669] {logging_mixin.py:115} INFO - [2022-08-24 09:38:44,668] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:38:44,857] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:38:44,867] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.202 seconds
+[2022-08-24 09:39:14,928] {processor.py:153} INFO - Started process (PID=10323) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:39:14,933] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:39:14,933] {logging_mixin.py:115} INFO - [2022-08-24 09:39:14,933] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:39:15,114] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:39:15,123] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.198 seconds
+[2022-08-24 09:39:45,172] {processor.py:153} INFO - Started process (PID=10387) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:39:45,173] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:39:45,173] {logging_mixin.py:115} INFO - [2022-08-24 09:39:45,173] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:39:45,347] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:39:45,357] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.187 seconds
+[2022-08-24 09:40:15,529] {processor.py:153} INFO - Started process (PID=10451) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:40:15,529] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:40:15,530] {logging_mixin.py:115} INFO - [2022-08-24 09:40:15,530] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:40:15,712] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:40:15,721] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.194 seconds
+[2022-08-24 09:40:45,850] {processor.py:153} INFO - Started process (PID=10505) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:40:45,851] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:40:45,851] {logging_mixin.py:115} INFO - [2022-08-24 09:40:45,851] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:40:46,027] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:40:46,036] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.187 seconds
+[2022-08-24 09:41:16,097] {processor.py:153} INFO - Started process (PID=10568) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:41:16,102] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:41:16,103] {logging_mixin.py:115} INFO - [2022-08-24 09:41:16,103] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:41:16,278] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:41:16,287] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 0.192 seconds
+[2022-08-24 09:41:22,953] {processor.py:153} INFO - Started process (PID=10602) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:41:22,959] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:41:22,960] {logging_mixin.py:115} INFO - [2022-08-24 09:41:22,960] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:41:26,625] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:41:26,687] {logging_mixin.py:115} INFO - [2022-08-24 09:41:26,687] {manager.py:508} INFO - Created Permission View: can read on DAG:taxi_rides_data
+[2022-08-24 09:41:26,693] {logging_mixin.py:115} INFO - [2022-08-24 09:41:26,693] {manager.py:508} INFO - Created Permission View: can edit on DAG:taxi_rides_data
+[2022-08-24 09:41:26,697] {logging_mixin.py:115} INFO - [2022-08-24 09:41:26,697] {manager.py:508} INFO - Created Permission View: can delete on DAG:taxi_rides_data
+[2022-08-24 09:41:26,697] {logging_mixin.py:115} INFO - [2022-08-24 09:41:26,697] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:41:26,702] {logging_mixin.py:115} INFO - [2022-08-24 09:41:26,702] {dag.py:2439} INFO - Creating ORM DAG for taxi_rides_data
+[2022-08-24 09:41:26,709] {logging_mixin.py:115} INFO - [2022-08-24 09:41:26,709] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:41:23.388286+00:00, run_after=2022-08-25T09:41:23.388286+00:00
+[2022-08-24 09:41:26,716] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.764 seconds
+[2022-08-24 09:41:27,750] {processor.py:153} INFO - Started process (PID=10604) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:41:27,751] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:41:27,752] {logging_mixin.py:115} INFO - [2022-08-24 09:41:27,752] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:41:31,174] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:41:31,182] {logging_mixin.py:115} INFO - [2022-08-24 09:41:31,182] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:41:31,196] {logging_mixin.py:115} INFO - [2022-08-24 09:41:31,196] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:41:27.992115+00:00, run_after=2022-08-25T09:41:27.992115+00:00
+[2022-08-24 09:41:31,217] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.475 seconds
+[2022-08-24 09:41:37,076] {processor.py:153} INFO - Started process (PID=10614) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:41:37,081] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:41:37,081] {logging_mixin.py:115} INFO - [2022-08-24 09:41:37,081] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:41:40,321] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:41:40,329] {logging_mixin.py:115} INFO - [2022-08-24 09:41:40,329] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:41:40,342] {logging_mixin.py:115} INFO - [2022-08-24 09:41:40,342] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:41:37.309544+00:00, run_after=2022-08-25T09:41:37.309544+00:00
+[2022-08-24 09:41:40,363] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.289 seconds
+[2022-08-24 09:42:10,405] {processor.py:153} INFO - Started process (PID=10677) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:42:10,411] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:42:10,412] {logging_mixin.py:115} INFO - [2022-08-24 09:42:10,412] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:42:14,601] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:42:14,645] {logging_mixin.py:115} INFO - [2022-08-24 09:42:14,645] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:42:14,659] {logging_mixin.py:115} INFO - [2022-08-24 09:42:14,659] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:42:10.658664+00:00, run_after=2022-08-25T09:42:10.658664+00:00
+[2022-08-24 09:42:14,669] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 4.271 seconds
+[2022-08-24 09:42:19,617] {processor.py:153} INFO - Started process (PID=10721) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:42:19,618] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:42:19,618] {logging_mixin.py:115} INFO - [2022-08-24 09:42:19,618] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:42:26,932] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:42:26,940] {logging_mixin.py:115} INFO - [2022-08-24 09:42:26,940] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:42:26,955] {logging_mixin.py:115} INFO - [2022-08-24 09:42:26,955] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:42:19.875898+00:00, run_after=2022-08-25T09:42:19.875898+00:00
+[2022-08-24 09:42:26,970] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 7.354 seconds
+[2022-08-24 09:42:56,961] {processor.py:153} INFO - Started process (PID=10785) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:42:56,967] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:42:56,969] {logging_mixin.py:115} INFO - [2022-08-24 09:42:56,968] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:43:02,045] {logging_mixin.py:115} INFO - [2022-08-24 09:43:02,045] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:43:02,048] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:43:02,089] {logging_mixin.py:115} INFO - [2022-08-24 09:43:02,089] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:43:02,102] {logging_mixin.py:115} INFO - [2022-08-24 09:43:02,102] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:42:57.215516+00:00, run_after=2022-08-25T09:42:57.215516+00:00
+[2022-08-24 09:43:02,111] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 5.157 seconds
+[2022-08-24 09:43:20,014] {processor.py:153} INFO - Started process (PID=10829) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:43:20,014] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:43:20,015] {logging_mixin.py:115} INFO - [2022-08-24 09:43:20,015] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:43:23,397] {logging_mixin.py:115} INFO - [2022-08-24 09:43:23,397] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:43:23,400] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:43:23,407] {logging_mixin.py:115} INFO - [2022-08-24 09:43:23,407] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:43:23,423] {logging_mixin.py:115} INFO - [2022-08-24 09:43:23,423] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:43:20.262247+00:00, run_after=2022-08-25T09:43:20.262247+00:00
+[2022-08-24 09:43:23,433] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.422 seconds
+[2022-08-24 09:43:28,466] {processor.py:153} INFO - Started process (PID=10850) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:43:28,472] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:43:28,473] {logging_mixin.py:115} INFO - [2022-08-24 09:43:28,473] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:43:31,818] {logging_mixin.py:115} INFO - [2022-08-24 09:43:31,818] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:43:31,820] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:43:31,829] {logging_mixin.py:115} INFO - [2022-08-24 09:43:31,829] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:43:31,844] {logging_mixin.py:115} INFO - [2022-08-24 09:43:31,844] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:43:28.700765+00:00, run_after=2022-08-25T09:43:28.700765+00:00
+[2022-08-24 09:43:31,858] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.393 seconds
+[2022-08-24 09:44:02,038] {processor.py:153} INFO - Started process (PID=10913) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:44:02,044] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:44:02,045] {logging_mixin.py:115} INFO - [2022-08-24 09:44:02,045] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:44:05,341] {logging_mixin.py:115} INFO - [2022-08-24 09:44:05,341] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:44:05,344] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:44:05,388] {logging_mixin.py:115} INFO - [2022-08-24 09:44:05,387] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:44:05,400] {logging_mixin.py:115} INFO - [2022-08-24 09:44:05,400] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:44:02.282870+00:00, run_after=2022-08-25T09:44:02.282870+00:00
+[2022-08-24 09:44:05,414] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.384 seconds
+[2022-08-24 09:44:36,380] {processor.py:153} INFO - Started process (PID=10976) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:44:36,386] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:44:36,387] {logging_mixin.py:115} INFO - [2022-08-24 09:44:36,387] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:44:39,622] {logging_mixin.py:115} INFO - [2022-08-24 09:44:39,622] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:44:39,625] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:44:39,670] {logging_mixin.py:115} INFO - [2022-08-24 09:44:39,670] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:44:39,685] {logging_mixin.py:115} INFO - [2022-08-24 09:44:39,684] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:44:36.636224+00:00, run_after=2022-08-25T09:44:36.636224+00:00
+[2022-08-24 09:44:39,705] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.333 seconds
+[2022-08-24 09:45:10,676] {processor.py:153} INFO - Started process (PID=11039) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:45:10,677] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:45:10,677] {logging_mixin.py:115} INFO - [2022-08-24 09:45:10,677] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:45:14,283] {logging_mixin.py:115} INFO - [2022-08-24 09:45:14,283] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:45:14,285] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:45:14,327] {logging_mixin.py:115} INFO - [2022-08-24 09:45:14,327] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:45:14,340] {logging_mixin.py:115} INFO - [2022-08-24 09:45:14,340] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:45:10.911791+00:00, run_after=2022-08-25T09:45:10.911791+00:00
+[2022-08-24 09:45:14,354] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.681 seconds
+[2022-08-24 09:45:44,861] {processor.py:153} INFO - Started process (PID=11103) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:45:44,861] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:45:44,861] {logging_mixin.py:115} INFO - [2022-08-24 09:45:44,861] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:45:48,121] {logging_mixin.py:115} INFO - [2022-08-24 09:45:48,121] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:45:48,123] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:45:48,168] {logging_mixin.py:115} INFO - [2022-08-24 09:45:48,168] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:45:48,183] {logging_mixin.py:115} INFO - [2022-08-24 09:45:48,183] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:45:45.079264+00:00, run_after=2022-08-25T09:45:45.079264+00:00
+[2022-08-24 09:45:48,191] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.332 seconds
+[2022-08-24 09:46:18,257] {processor.py:153} INFO - Started process (PID=11169) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:46:18,257] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:46:18,258] {logging_mixin.py:115} INFO - [2022-08-24 09:46:18,258] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:46:23,081] {logging_mixin.py:115} INFO - [2022-08-24 09:46:23,081] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:46:23,083] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:46:23,125] {logging_mixin.py:115} INFO - [2022-08-24 09:46:23,125] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:46:23,138] {logging_mixin.py:115} INFO - [2022-08-24 09:46:23,138] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:46:18.513760+00:00, run_after=2022-08-25T09:46:18.513760+00:00
+[2022-08-24 09:46:23,152] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 4.899 seconds
+[2022-08-24 09:46:53,803] {processor.py:153} INFO - Started process (PID=11258) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:46:53,809] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:46:53,810] {logging_mixin.py:115} INFO - [2022-08-24 09:46:53,810] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:46:57,897] {logging_mixin.py:115} INFO - [2022-08-24 09:46:57,897] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:46:57,906] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:46:57,948] {logging_mixin.py:115} INFO - [2022-08-24 09:46:57,948] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:46:57,960] {logging_mixin.py:115} INFO - [2022-08-24 09:46:57,960] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:46:54.061526+00:00, run_after=2022-08-25T09:46:54.061526+00:00
+[2022-08-24 09:46:57,968] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 4.173 seconds
+[2022-08-24 09:47:28,200] {processor.py:153} INFO - Started process (PID=11326) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:47:28,202] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:47:28,202] {logging_mixin.py:115} INFO - [2022-08-24 09:47:28,202] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:47:31,503] {logging_mixin.py:115} INFO - [2022-08-24 09:47:31,503] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:47:31,505] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:47:31,548] {logging_mixin.py:115} INFO - [2022-08-24 09:47:31,548] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:47:31,562] {logging_mixin.py:115} INFO - [2022-08-24 09:47:31,562] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:47:28.451709+00:00, run_after=2022-08-25T09:47:28.451709+00:00
+[2022-08-24 09:47:31,582] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.384 seconds
+[2022-08-24 09:47:40,644] {processor.py:153} INFO - Started process (PID=11346) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:47:40,644] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:47:40,646] {logging_mixin.py:115} INFO - [2022-08-24 09:47:40,645] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:47:43,908] {logging_mixin.py:115} INFO - [2022-08-24 09:47:43,907] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:47:43,916] {logging_mixin.py:115} INFO - [2022-08-24 09:47:43,909] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/taxi_rides_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/taxi_rides_dag.py", line 28, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/taxi_rides_dag.py", line 16, in request_taxi_rides_data
+    file = ZipFile(BytesIO(r.content)).open("taxigov-corridas-completo.csv").getvalue()
+AttributeError: 'ZipExtFile' object has no attribute 'getvalue'
+[2022-08-24 09:47:43,923] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:47:43,968] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.332 seconds
+[2022-08-24 09:47:55,917] {processor.py:153} INFO - Started process (PID=11390) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:47:55,917] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:47:55,917] {logging_mixin.py:115} INFO - [2022-08-24 09:47:55,917] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:47:59,272] {logging_mixin.py:115} INFO - [2022-08-24 09:47:59,272] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:47:59,274] {logging_mixin.py:115} INFO - [2022-08-24 09:47:59,274] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/taxi_rides_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/taxi_rides_dag.py", line 28, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/taxi_rides_dag.py", line 16, in request_taxi_rides_data
+    file = ZipFile(BytesIO(r.content)).open("taxigov-corridas-completo.csv").getvalue()
+AttributeError: 'ZipExtFile' object has no attribute 'getvalue'
+[2022-08-24 09:47:59,276] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:47:59,294] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.379 seconds
+[2022-08-24 09:48:29,462] {processor.py:153} INFO - Started process (PID=11454) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:48:29,463] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:48:29,463] {logging_mixin.py:115} INFO - [2022-08-24 09:48:29,463] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:48:32,789] {logging_mixin.py:115} INFO - [2022-08-24 09:48:32,788] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:48:32,792] {logging_mixin.py:115} INFO - [2022-08-24 09:48:32,792] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/taxi_rides_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/taxi_rides_dag.py", line 28, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/taxi_rides_dag.py", line 16, in request_taxi_rides_data
+    file = ZipFile(BytesIO(r.content)).open("taxigov-corridas-completo.csv").getvalue()
+AttributeError: 'ZipExtFile' object has no attribute 'getvalue'
+[2022-08-24 09:48:32,794] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:48:32,813] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.352 seconds
+[2022-08-24 09:49:02,872] {processor.py:153} INFO - Started process (PID=11517) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:49:02,872] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:49:02,872] {logging_mixin.py:115} INFO - [2022-08-24 09:49:02,872] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:49:06,495] {logging_mixin.py:115} INFO - [2022-08-24 09:49:06,495] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:49:06,497] {logging_mixin.py:115} INFO - [2022-08-24 09:49:06,497] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/taxi_rides_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/taxi_rides_dag.py", line 28, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/taxi_rides_dag.py", line 16, in request_taxi_rides_data
+    file = ZipFile(BytesIO(r.content)).open("taxigov-corridas-completo.csv").getvalue()
+AttributeError: 'ZipExtFile' object has no attribute 'getvalue'
+[2022-08-24 09:49:06,499] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:49:06,514] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.644 seconds
+[2022-08-24 09:49:37,238] {processor.py:153} INFO - Started process (PID=11580) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:49:37,238] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:49:37,239] {logging_mixin.py:115} INFO - [2022-08-24 09:49:37,239] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:49:41,070] {logging_mixin.py:115} INFO - [2022-08-24 09:49:41,069] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:49:41,073] {logging_mixin.py:115} INFO - [2022-08-24 09:49:41,072] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/taxi_rides_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/taxi_rides_dag.py", line 28, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/taxi_rides_dag.py", line 16, in request_taxi_rides_data
+    file = ZipFile(BytesIO(r.content)).open("taxigov-corridas-completo.csv").getvalue()
+AttributeError: 'ZipExtFile' object has no attribute 'getvalue'
+[2022-08-24 09:49:41,074] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:49:41,092] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.859 seconds
+[2022-08-24 09:50:11,373] {processor.py:153} INFO - Started process (PID=11643) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:50:11,378] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:50:11,379] {logging_mixin.py:115} INFO - [2022-08-24 09:50:11,379] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:50:15,178] {logging_mixin.py:115} INFO - [2022-08-24 09:50:15,177] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:50:15,180] {logging_mixin.py:115} INFO - [2022-08-24 09:50:15,180] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/taxi_rides_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/taxi_rides_dag.py", line 28, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/taxi_rides_dag.py", line 16, in request_taxi_rides_data
+    file = ZipFile(BytesIO(r.content)).open("taxigov-corridas-completo.csv").getvalue()
+AttributeError: 'ZipExtFile' object has no attribute 'getvalue'
+[2022-08-24 09:50:15,181] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:50:15,197] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 3.830 seconds
+[2022-08-24 09:50:38,584] {processor.py:153} INFO - Started process (PID=11706) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:50:38,590] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:50:38,591] {logging_mixin.py:115} INFO - [2022-08-24 09:50:38,591] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:50:41,848] {logging_mixin.py:115} INFO - [2022-08-24 09:50:41,847] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:50:42,295] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:50:43,690] {logging_mixin.py:115} INFO - [2022-08-24 09:50:43,690] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:50:43,705] {logging_mixin.py:115} INFO - [2022-08-24 09:50:43,705] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:50:38.831383+00:00, run_after=2022-08-25T09:50:38.831383+00:00
+[2022-08-24 09:50:55,537] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 16.959 seconds
+[2022-08-24 09:51:25,742] {processor.py:153} INFO - Started process (PID=11769) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:51:25,742] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:51:25,743] {logging_mixin.py:115} INFO - [2022-08-24 09:51:25,743] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:51:29,295] {logging_mixin.py:115} INFO - [2022-08-24 09:51:29,295] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:51:29,732] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:51:32,220] {logging_mixin.py:115} INFO - [2022-08-24 09:51:32,219] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:51:32,239] {logging_mixin.py:115} INFO - [2022-08-24 09:51:32,239] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:51:26.260956+00:00, run_after=2022-08-25T09:51:26.260956+00:00
+[2022-08-24 09:51:37,464] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 11.723 seconds
+[2022-08-24 09:52:07,568] {processor.py:153} INFO - Started process (PID=11875) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:52:07,568] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:52:07,568] {logging_mixin.py:115} INFO - [2022-08-24 09:52:07,568] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:52:11,317] {logging_mixin.py:115} INFO - [2022-08-24 09:52:11,316] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:52:11,743] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:52:14,340] {logging_mixin.py:115} INFO - [2022-08-24 09:52:14,339] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:52:14,356] {logging_mixin.py:115} INFO - [2022-08-24 09:52:14,356] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:52:08.284028+00:00, run_after=2022-08-25T09:52:08.284028+00:00
+[2022-08-24 09:52:31,257] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 23.691 seconds
+[2022-08-24 09:53:01,733] {processor.py:153} INFO - Started process (PID=11988) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:53:01,738] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:53:01,738] {logging_mixin.py:115} INFO - [2022-08-24 09:53:01,738] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:53:05,237] {logging_mixin.py:115} INFO - [2022-08-24 09:53:05,237] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:53:05,682] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:53:08,151] {logging_mixin.py:115} INFO - [2022-08-24 09:53:08,151] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:53:08,176] {logging_mixin.py:115} INFO - [2022-08-24 09:53:08,176] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:53:02.214421+00:00, run_after=2022-08-25T09:53:02.214421+00:00
+[2022-08-24 09:53:13,579] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 11.848 seconds
+[2022-08-24 09:53:43,943] {processor.py:153} INFO - Started process (PID=12052) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:53:43,944] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:53:43,945] {logging_mixin.py:115} INFO - [2022-08-24 09:53:43,945] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:53:47,550] {logging_mixin.py:115} INFO - [2022-08-24 09:53:47,550] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:53:47,988] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:53:50,501] {logging_mixin.py:115} INFO - [2022-08-24 09:53:50,501] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:53:50,513] {logging_mixin.py:115} INFO - [2022-08-24 09:53:50,513] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:53:44.344181+00:00, run_after=2022-08-25T09:53:44.344181+00:00
+[2022-08-24 09:53:55,451] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 11.514 seconds
+[2022-08-24 09:54:25,555] {processor.py:153} INFO - Started process (PID=12123) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:54:25,557] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:54:25,558] {logging_mixin.py:115} INFO - [2022-08-24 09:54:25,558] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:54:28,812] {logging_mixin.py:115} INFO - [2022-08-24 09:54:28,812] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:54:29,225] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:54:31,989] {logging_mixin.py:115} INFO - [2022-08-24 09:54:31,989] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:54:32,005] {logging_mixin.py:115} INFO - [2022-08-24 09:54:32,005] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:54:25.841284+00:00, run_after=2022-08-25T09:54:25.841284+00:00
+[2022-08-24 09:54:37,052] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 11.506 seconds
+[2022-08-24 09:54:52,149] {processor.py:153} INFO - Started process (PID=12177) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:54:52,149] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:54:52,150] {logging_mixin.py:115} INFO - [2022-08-24 09:54:52,150] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:54:56,516] {logging_mixin.py:115} INFO - [2022-08-24 09:54:56,516] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:54:56,947] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:54:56,957] {logging_mixin.py:115} INFO - [2022-08-24 09:54:56,957] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:54:56,978] {logging_mixin.py:115} INFO - [2022-08-24 09:54:56,978] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:54:52.398881+00:00, run_after=2022-08-25T09:54:52.398881+00:00
+[2022-08-24 09:54:56,988] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 4.841 seconds
+[2022-08-24 09:55:27,870] {processor.py:153} INFO - Started process (PID=12249) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:55:27,875] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:55:27,876] {logging_mixin.py:115} INFO - [2022-08-24 09:55:27,876] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:55:31,111] {logging_mixin.py:115} INFO - [2022-08-24 09:55:31,111] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:55:31,537] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:55:33,987] {logging_mixin.py:115} INFO - [2022-08-24 09:55:33,987] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:55:33,999] {logging_mixin.py:115} INFO - [2022-08-24 09:55:33,999] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:55:28.093685+00:00, run_after=2022-08-25T09:55:28.093685+00:00
+[2022-08-24 09:55:38,934] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 11.066 seconds
+[2022-08-24 09:56:09,105] {processor.py:153} INFO - Started process (PID=12346) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:56:09,111] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:56:09,112] {logging_mixin.py:115} INFO - [2022-08-24 09:56:09,112] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:56:13,109] {logging_mixin.py:115} INFO - [2022-08-24 09:56:13,109] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:56:13,512] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:56:15,834] {logging_mixin.py:115} INFO - [2022-08-24 09:56:15,834] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:56:15,846] {logging_mixin.py:115} INFO - [2022-08-24 09:56:15,845] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:56:09.358333+00:00, run_after=2022-08-25T09:56:09.358333+00:00
+[2022-08-24 09:56:20,621] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 11.518 seconds
+[2022-08-24 09:56:51,332] {processor.py:153} INFO - Started process (PID=12418) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:56:51,333] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:56:51,334] {logging_mixin.py:115} INFO - [2022-08-24 09:56:51,334] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:56:54,596] {logging_mixin.py:115} INFO - [2022-08-24 09:56:54,596] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:56:55,030] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:56:57,491] {logging_mixin.py:115} INFO - [2022-08-24 09:56:57,491] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:56:57,505] {logging_mixin.py:115} INFO - [2022-08-24 09:56:57,505] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:56:51.543576+00:00, run_after=2022-08-25T09:56:51.543576+00:00
+[2022-08-24 09:57:02,558] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 11.228 seconds
+[2022-08-24 09:57:32,901] {processor.py:153} INFO - Started process (PID=12499) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:57:32,902] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:57:32,902] {logging_mixin.py:115} INFO - [2022-08-24 09:57:32,902] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:57:36,178] {logging_mixin.py:115} INFO - [2022-08-24 09:57:36,178] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:57:36,588] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:57:39,153] {logging_mixin.py:115} INFO - [2022-08-24 09:57:39,153] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:57:39,168] {logging_mixin.py:115} INFO - [2022-08-24 09:57:39,168] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:57:33.143823+00:00, run_after=2022-08-25T09:57:33.143823+00:00
+[2022-08-24 09:57:44,614] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 11.715 seconds
+[2022-08-24 09:58:15,326] {processor.py:153} INFO - Started process (PID=12596) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:58:15,326] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:58:15,326] {logging_mixin.py:115} INFO - [2022-08-24 09:58:15,326] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:58:19,003] {logging_mixin.py:115} INFO - [2022-08-24 09:58:19,003] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:58:19,409] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:58:21,864] {logging_mixin.py:115} INFO - [2022-08-24 09:58:21,864] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:58:21,878] {logging_mixin.py:115} INFO - [2022-08-24 09:58:21,878] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:58:15.603596+00:00, run_after=2022-08-25T09:58:15.603596+00:00
+[2022-08-24 09:58:27,521] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 12.198 seconds
+[2022-08-24 09:58:57,614] {processor.py:153} INFO - Started process (PID=12669) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:58:57,615] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:58:57,615] {logging_mixin.py:115} INFO - [2022-08-24 09:58:57,615] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:59:00,956] {logging_mixin.py:115} INFO - [2022-08-24 09:59:00,956] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:59:01,408] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:59:03,941] {logging_mixin.py:115} INFO - [2022-08-24 09:59:03,941] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:59:03,954] {logging_mixin.py:115} INFO - [2022-08-24 09:59:03,954] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:58:57.968478+00:00, run_after=2022-08-25T09:58:57.968478+00:00
+[2022-08-24 09:59:09,455] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 11.844 seconds
+[2022-08-24 09:59:40,409] {processor.py:153} INFO - Started process (PID=12766) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:59:40,410] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 09:59:40,410] {logging_mixin.py:115} INFO - [2022-08-24 09:59:40,410] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:59:45,050] {logging_mixin.py:115} INFO - [2022-08-24 09:59:45,050] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 09:59:45,523] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 09:59:48,399] {logging_mixin.py:115} INFO - [2022-08-24 09:59:48,398] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 09:59:48,414] {logging_mixin.py:115} INFO - [2022-08-24 09:59:48,414] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T09:59:40.783541+00:00, run_after=2022-08-25T09:59:40.783541+00:00
+[2022-08-24 09:59:54,062] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 13.655 seconds
+[2022-08-24 10:00:24,760] {processor.py:153} INFO - Started process (PID=12839) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:00:24,761] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:00:24,761] {logging_mixin.py:115} INFO - [2022-08-24 10:00:24,761] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:00:29,194] {logging_mixin.py:115} INFO - [2022-08-24 10:00:29,194] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:00:29,637] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:00:32,681] {logging_mixin.py:115} INFO - [2022-08-24 10:00:32,681] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:00:32,711] {logging_mixin.py:115} INFO - [2022-08-24 10:00:32,711] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:00:25.072672+00:00, run_after=2022-08-25T10:00:25.072672+00:00
+[2022-08-24 10:00:39,952] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 15.193 seconds
+[2022-08-24 10:01:10,415] {processor.py:153} INFO - Started process (PID=12945) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:01:10,415] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:01:10,415] {logging_mixin.py:115} INFO - [2022-08-24 10:01:10,415] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:01:14,257] {logging_mixin.py:115} INFO - [2022-08-24 10:01:14,257] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:01:14,687] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:01:17,151] {logging_mixin.py:115} INFO - [2022-08-24 10:01:17,151] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:01:17,163] {logging_mixin.py:115} INFO - [2022-08-24 10:01:17,163] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:01:11.097167+00:00, run_after=2022-08-25T10:01:11.097167+00:00
+[2022-08-24 10:01:24,871] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 14.458 seconds
+[2022-08-24 10:01:55,271] {processor.py:153} INFO - Started process (PID=13017) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:01:55,271] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:01:55,271] {logging_mixin.py:115} INFO - [2022-08-24 10:01:55,271] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:01:58,588] {logging_mixin.py:115} INFO - [2022-08-24 10:01:58,588] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:01:59,027] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:02:01,476] {logging_mixin.py:115} INFO - [2022-08-24 10:02:01,476] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:02:01,496] {logging_mixin.py:115} INFO - [2022-08-24 10:02:01,496] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:01:55.580563+00:00, run_after=2022-08-25T10:01:55.580563+00:00
+[2022-08-24 10:02:06,823] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 11.554 seconds
+[2022-08-24 10:02:37,078] {processor.py:153} INFO - Started process (PID=13092) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:02:37,079] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:02:37,079] {logging_mixin.py:115} INFO - [2022-08-24 10:02:37,079] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:02:40,305] {logging_mixin.py:115} INFO - [2022-08-24 10:02:40,305] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:02:40,741] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:02:43,446] {logging_mixin.py:115} INFO - [2022-08-24 10:02:43,445] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:02:43,461] {logging_mixin.py:115} INFO - [2022-08-24 10:02:43,461] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:02:37.340874+00:00, run_after=2022-08-25T10:02:37.340874+00:00
+[2022-08-24 10:02:48,564] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 11.488 seconds
+[2022-08-24 10:03:18,896] {processor.py:153} INFO - Started process (PID=13195) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:03:18,897] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:03:18,897] {logging_mixin.py:115} INFO - [2022-08-24 10:03:18,897] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:03:23,197] {logging_mixin.py:115} INFO - [2022-08-24 10:03:23,197] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:03:23,628] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:03:26,295] {logging_mixin.py:115} INFO - [2022-08-24 10:03:26,295] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:03:26,308] {logging_mixin.py:115} INFO - [2022-08-24 10:03:26,308] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:03:19.571607+00:00, run_after=2022-08-25T10:03:19.571607+00:00
+[2022-08-24 10:03:41,189] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 22.294 seconds
+[2022-08-24 10:04:11,347] {processor.py:153} INFO - Started process (PID=13267) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:04:11,348] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:04:11,349] {logging_mixin.py:115} INFO - [2022-08-24 10:04:11,349] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:04:15,255] {logging_mixin.py:115} INFO - [2022-08-24 10:04:15,255] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:04:15,840] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:04:18,792] {logging_mixin.py:115} INFO - [2022-08-24 10:04:18,791] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:04:18,804] {logging_mixin.py:115} INFO - [2022-08-24 10:04:18,804] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:04:12.022003+00:00, run_after=2022-08-25T10:04:12.022003+00:00
+[2022-08-24 10:04:23,736] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 12.397 seconds
+[2022-08-24 10:04:54,455] {processor.py:153} INFO - Started process (PID=13374) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:04:54,462] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:04:54,463] {logging_mixin.py:115} INFO - [2022-08-24 10:04:54,463] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:04:57,937] {logging_mixin.py:115} INFO - [2022-08-24 10:04:57,937] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:04:58,388] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:05:01,094] {logging_mixin.py:115} INFO - [2022-08-24 10:05:01,093] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:05:01,107] {logging_mixin.py:115} INFO - [2022-08-24 10:05:01,107] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:04:54.817808+00:00, run_after=2022-08-25T10:04:54.817808+00:00
+[2022-08-24 10:05:06,220] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 11.773 seconds
+[2022-08-24 10:05:29,659] {processor.py:153} INFO - Started process (PID=13437) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:05:29,660] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:05:29,661] {logging_mixin.py:115} INFO - [2022-08-24 10:05:29,661] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:05:32,967] {logging_mixin.py:115} INFO - [2022-08-24 10:05:32,967] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:05:33,413] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:05:36,141] {logging_mixin.py:115} INFO - [2022-08-24 10:05:36,141] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:05:36,154] {logging_mixin.py:115} INFO - [2022-08-24 10:05:36,153] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:05:29.916199+00:00, run_after=2022-08-25T10:05:29.916199+00:00
+[2022-08-24 10:05:41,706] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 12.054 seconds
+[2022-08-24 10:05:46,524] {processor.py:153} INFO - Started process (PID=13492) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:05:46,524] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:05:46,524] {logging_mixin.py:115} INFO - [2022-08-24 10:05:46,524] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:05:50,277] {logging_mixin.py:115} INFO - [2022-08-24 10:05:50,277] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:05:50,697] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:05:50,707] {logging_mixin.py:115} INFO - [2022-08-24 10:05:50,707] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:05:50,721] {logging_mixin.py:115} INFO - [2022-08-24 10:05:50,721] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:05:47.204388+00:00, run_after=2022-08-25T10:05:47.204388+00:00
+[2022-08-24 10:05:50,729] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 4.208 seconds
+[2022-08-24 10:06:20,852] {processor.py:153} INFO - Started process (PID=13555) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:06:20,853] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:06:20,853] {logging_mixin.py:115} INFO - [2022-08-24 10:06:20,853] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:06:25,024] {logging_mixin.py:115} INFO - [2022-08-24 10:06:25,024] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:06:25,475] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:06:28,098] {logging_mixin.py:115} INFO - [2022-08-24 10:06:28,098] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:06:28,113] {logging_mixin.py:115} INFO - [2022-08-24 10:06:28,113] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:06:21.135459+00:00, run_after=2022-08-25T10:06:21.135459+00:00
+[2022-08-24 10:06:34,535] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 13.690 seconds
+[2022-08-24 10:07:05,383] {processor.py:153} INFO - Started process (PID=13628) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:07:05,389] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:07:05,389] {logging_mixin.py:115} INFO - [2022-08-24 10:07:05,389] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:07:09,020] {logging_mixin.py:115} INFO - [2022-08-24 10:07:09,020] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:07:09,436] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:07:11,965] {logging_mixin.py:115} INFO - [2022-08-24 10:07:11,964] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:07:11,981] {logging_mixin.py:115} INFO - [2022-08-24 10:07:11,981] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:07:05.804771+00:00, run_after=2022-08-25T10:07:05.804771+00:00
+[2022-08-24 10:07:20,449] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 15.066 seconds
+[2022-08-24 10:07:50,626] {processor.py:153} INFO - Started process (PID=13694) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:07:50,626] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:07:50,626] {logging_mixin.py:115} INFO - [2022-08-24 10:07:50,626] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:07:54,415] {logging_mixin.py:115} INFO - [2022-08-24 10:07:54,415] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:07:54,838] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:07:57,556] {logging_mixin.py:115} INFO - [2022-08-24 10:07:57,555] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:07:57,571] {logging_mixin.py:115} INFO - [2022-08-24 10:07:57,571] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:07:51.407214+00:00, run_after=2022-08-25T10:07:51.407214+00:00
+[2022-08-24 10:08:02,936] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 12.312 seconds
+[2022-08-24 10:08:33,355] {processor.py:153} INFO - Started process (PID=13797) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:08:33,355] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:08:33,355] {logging_mixin.py:115} INFO - [2022-08-24 10:08:33,355] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:08:37,508] {logging_mixin.py:115} INFO - [2022-08-24 10:08:37,508] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:08:37,958] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:08:40,516] {logging_mixin.py:115} INFO - [2022-08-24 10:08:40,516] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:08:40,528] {logging_mixin.py:115} INFO - [2022-08-24 10:08:40,528] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:08:34.003540+00:00, run_after=2022-08-25T10:08:34.003540+00:00
+[2022-08-24 10:08:45,928] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 12.575 seconds
+[2022-08-24 10:09:16,035] {processor.py:153} INFO - Started process (PID=13869) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:09:16,035] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:09:16,035] {logging_mixin.py:115} INFO - [2022-08-24 10:09:16,035] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:09:19,519] {logging_mixin.py:115} INFO - [2022-08-24 10:09:19,519] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:09:20,000] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:09:23,239] {logging_mixin.py:115} INFO - [2022-08-24 10:09:23,239] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:09:23,259] {logging_mixin.py:115} INFO - [2022-08-24 10:09:23,259] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:09:16.518306+00:00, run_after=2022-08-25T10:09:16.518306+00:00
+[2022-08-24 10:09:46,539] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 30.505 seconds
+[2022-08-24 10:10:55,075] {processor.py:153} INFO - Started process (PID=13935) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:10:55,076] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:10:55,077] {logging_mixin.py:115} INFO - [2022-08-24 10:10:55,077] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:11:00,828] {logging_mixin.py:115} INFO - [2022-08-24 10:11:00,828] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:11:01,235] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:11:03,724] {logging_mixin.py:115} INFO - [2022-08-24 10:11:03,724] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:11:03,739] {logging_mixin.py:115} INFO - [2022-08-24 10:11:03,739] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:10:56.599485+00:00, run_after=2022-08-25T10:10:56.599485+00:00
+[2022-08-24 10:11:15,519] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 20.450 seconds
+[2022-08-24 10:11:46,095] {processor.py:153} INFO - Started process (PID=14034) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:11:46,103] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-24 10:11:46,103] {logging_mixin.py:115} INFO - [2022-08-24 10:11:46,103] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:11:50,105] {logging_mixin.py:115} INFO - [2022-08-24 10:11:50,104] {taxi_rides_dag.py:15} INFO - Request result: 200
+[2022-08-24 10:11:50,533] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-24 10:11:53,071] {logging_mixin.py:115} INFO - [2022-08-24 10:11:53,070] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-24 10:11:53,088] {logging_mixin.py:115} INFO - [2022-08-24 10:11:53,088] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-24T10:11:46.898305+00:00, run_after=2022-08-25T10:11:46.898305+00:00

@@ -1,0 +1,37 @@
+[2022-08-25 11:46:49,108] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T11:46:43.154767+00:00 [queued]>
+[2022-08-25 11:46:49,118] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T11:46:43.154767+00:00 [queued]>
+[2022-08-25 11:46:49,118] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 11:46:49,118] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-25 11:46:49,118] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 11:46:49,137] {taskinstance.py:1397} INFO - Executing <Task(S3ToRedshiftOperator): transfer_s3_to_redshift> on 2022-08-25 11:46:43.154767+00:00
+[2022-08-25 11:46:49,142] {standard_task_runner.py:52} INFO - Started process 8607 to run task
+[2022-08-25 11:46:49,145] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'taxi_rides_data', 'transfer_s3_to_redshift', 'manual__2022-08-25T11:46:43.154767+00:00', '--job-id', '76', '--raw', '--subdir', 'DAGS_FOLDER/taxi_rides_dag.py', '--cfg-path', '/tmp/tmpks053j5r', '--error-file', '/tmp/tmp3i3f5df6']
+[2022-08-25 11:46:49,146] {standard_task_runner.py:80} INFO - Job 76: Subtask transfer_s3_to_redshift
+[2022-08-25 11:46:49,206] {task_command.py:371} INFO - Running <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T11:46:43.154767+00:00 [running]> on host ddc8002727e0
+[2022-08-25 11:46:49,288] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=taxi_rides_data
+AIRFLOW_CTX_TASK_ID=transfer_s3_to_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-25T11:46:43.154767+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-25T11:46:43.154767+00:00
+[2022-08-25 11:46:49,298] {base.py:68} INFO - Using connection ID 'aws_credentials' for task execution.
+[2022-08-25 11:46:49,303] {base.py:68} INFO - Using connection ID 'aws_credentials' for task execution.
+[2022-08-25 11:46:49,303] {base_aws.py:206} INFO - Credentials retrieved from login
+[2022-08-25 11:46:49,317] {s3_to_redshift.py:167} INFO - Executing COPY command...
+[2022-08-25 11:46:49,323] {base.py:68} INFO - Using connection ID 'redshift_default' for task execution.
+[2022-08-25 11:46:50,794] {dbapi.py:231} INFO - Running statement: 
+                    COPY PUBLIC.raw__taxigov_corridas 
+                    FROM 's3://brazilian-politicians-taxi-rides/taxigov_corridas.csv'
+                    credentials
+                    'aws_access_key_id=AKIAR2G6RXW7IQF76DLJ;aws_secret_access_key=***'
+                    csv
+			IGNOREHEADER 1
+			MAXERROR 100;
+        , parameters: None
+[2022-08-25 11:47:26,826] {s3_to_redshift.py:169} INFO - COPY command complete...
+[2022-08-25 11:47:26,863] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=taxi_rides_data, task_id=transfer_s3_to_redshift, execution_date=20220825T114643, start_date=20220825T114649, end_date=20220825T114726
+[2022-08-25 11:47:26,947] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-25 11:47:27,013] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

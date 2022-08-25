@@ -1,0 +1,48 @@
+[2022-08-25 10:14:52,273] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T10:14:50.344517+00:00 [queued]>
+[2022-08-25 10:14:52,284] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T10:14:50.344517+00:00 [queued]>
+[2022-08-25 10:14:52,284] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 10:14:52,284] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-25 10:14:52,284] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 10:14:52,445] {taskinstance.py:1397} INFO - Executing <Task(S3ToRedshiftOperator): transfer_s3_to_redshift> on 2022-08-25 10:14:50.344517+00:00
+[2022-08-25 10:14:52,451] {standard_task_runner.py:52} INFO - Started process 4390 to run task
+[2022-08-25 10:14:52,454] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'taxi_rides_data', 'transfer_s3_to_redshift', 'manual__2022-08-25T10:14:50.344517+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/taxi_rides_dag.py', '--cfg-path', '/tmp/tmpbc9126ip', '--error-file', '/tmp/tmp7tl0oyzy']
+[2022-08-25 10:14:52,455] {standard_task_runner.py:80} INFO - Job 62: Subtask transfer_s3_to_redshift
+[2022-08-25 10:14:52,520] {task_command.py:371} INFO - Running <TaskInstance: taxi_rides_data.transfer_s3_to_redshift manual__2022-08-25T10:14:50.344517+00:00 [running]> on host ddc8002727e0
+[2022-08-25 10:14:52,605] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=taxi_rides_data
+AIRFLOW_CTX_TASK_ID=transfer_s3_to_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-25T10:14:50.344517+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-25T10:14:50.344517+00:00
+[2022-08-25 10:14:52,616] {base.py:68} INFO - Using connection ID 'redshift_default' for task execution.
+[2022-08-25 10:14:52,623] {base.py:68} INFO - Using connection ID 'redshift_default' for task execution.
+[2022-08-25 10:14:52,623] {base_aws.py:206} INFO - Credentials retrieved from login
+[2022-08-25 10:14:52,640] {s3_to_redshift.py:167} INFO - Executing COPY command...
+[2022-08-25 10:14:52,647] {base.py:68} INFO - Using connection ID 'redshift_default' for task execution.
+[2022-08-25 10:17:02,566] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/core.py", line 585, in __init__
+    self._usock.connect((host, port))
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/transfers/s3_to_redshift.py", line 168, in execute
+    redshift_hook.run(sql, autocommit=self.autocommit)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 204, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/redshift_sql.py", line 133, in get_conn
+    return redshift_connector.connect(**conn_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/__init__.py", line 360, in connect
+    numeric_to_float=info.numeric_to_float,
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/core.py", line 632, in __init__
+    raise InterfaceError("communication error", e)
+redshift_connector.error.InterfaceError: ('communication error', TimeoutError(110, 'Connection timed out'))
+[2022-08-25 10:17:02,575] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=taxi_rides_data, task_id=transfer_s3_to_redshift, execution_date=20220825T101450, start_date=20220825T101452, end_date=20220825T101702
+[2022-08-25 10:17:02,596] {standard_task_runner.py:97} ERROR - Failed to execute job 62 for task transfer_s3_to_redshift (('communication error', TimeoutError(110, 'Connection timed out')); 4390)
+[2022-08-25 10:17:02,618] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-08-25 10:17:02,654] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

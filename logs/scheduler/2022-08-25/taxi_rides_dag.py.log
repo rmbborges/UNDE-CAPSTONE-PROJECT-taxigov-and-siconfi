@@ -2434,3 +2434,11 @@ SyntaxError: invalid syntax
 [2022-08-25 11:53:31,682] {logging_mixin.py:115} INFO - [2022-08-25 11:53:31,682] {dag.py:2420} INFO - Sync 1 DAGs
 [2022-08-25 11:53:31,704] {logging_mixin.py:115} INFO - [2022-08-25 11:53:31,704] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-25T11:53:23.206435+00:00, run_after=2022-08-26T11:53:23.206435+00:00
 [2022-08-25 11:53:40,213] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 17.163 seconds
+[2022-08-25 11:54:10,374] {processor.py:153} INFO - Started process (PID=22681) to work on /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-25 11:54:10,380] {processor.py:641} INFO - Processing file /opt/airflow/dags/taxi_rides_dag.py for tasks to queue
+[2022-08-25 11:54:10,381] {logging_mixin.py:115} INFO - [2022-08-25 11:54:10,381] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-25 11:54:13,535] {logging_mixin.py:115} INFO - [2022-08-25 11:54:13,535] {taxi_rides_dag.py:18} INFO - Request result: 200
+[2022-08-25 11:54:14,277] {processor.py:651} INFO - DAG(s) dict_keys(['taxi_rides_data']) retrieved from /opt/airflow/dags/taxi_rides_dag.py
+[2022-08-25 11:54:18,388] {logging_mixin.py:115} INFO - [2022-08-25 11:54:18,388] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-25 11:54:18,411] {logging_mixin.py:115} INFO - [2022-08-25 11:54:18,411] {dag.py:2972} INFO - Setting next_dagrun for taxi_rides_data to 2022-08-25T11:54:10.527020+00:00, run_after=2022-08-26T11:54:10.527020+00:00
+[2022-08-25 11:54:26,766] {processor.py:161} INFO - Processing /opt/airflow/dags/taxi_rides_dag.py took 16.400 seconds

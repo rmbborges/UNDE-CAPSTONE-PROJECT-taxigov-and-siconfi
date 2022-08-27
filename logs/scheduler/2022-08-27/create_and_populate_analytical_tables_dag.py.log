@@ -1,0 +1,90 @@
+[2022-08-27 19:36:08,447] {processor.py:153} INFO - Started process (PID=8251) to work on /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:08,447] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_analytical_tables_dag.py for tasks to queue
+[2022-08-27 19:36:08,448] {logging_mixin.py:115} INFO - [2022-08-27 19:36:08,448] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:08,535] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:08,544] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_analytical_tables_dag.py took 0.099 seconds
+[2022-08-27 19:36:15,865] {processor.py:153} INFO - Started process (PID=8260) to work on /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:15,866] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_analytical_tables_dag.py for tasks to queue
+[2022-08-27 19:36:15,867] {logging_mixin.py:115} INFO - [2022-08-27 19:36:15,866] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:15,871] {logging_mixin.py:115} INFO - [2022-08-27 19:36:15,868] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_analytical_tables_dag.py", line 14
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-08-27 19:36:15,871] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:15,889] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_analytical_tables_dag.py took 0.030 seconds
+[2022-08-27 19:36:22,119] {processor.py:153} INFO - Started process (PID=8276) to work on /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:22,120] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_analytical_tables_dag.py for tasks to queue
+[2022-08-27 19:36:22,121] {logging_mixin.py:115} INFO - [2022-08-27 19:36:22,120] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:22,123] {logging_mixin.py:115} INFO - [2022-08-27 19:36:22,122] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_analytical_tables_dag.py", line 15
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-08-27 19:36:22,124] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:22,144] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_analytical_tables_dag.py took 0.033 seconds
+[2022-08-27 19:36:40,102] {processor.py:153} INFO - Started process (PID=8315) to work on /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:40,102] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_analytical_tables_dag.py for tasks to queue
+[2022-08-27 19:36:40,102] {logging_mixin.py:115} INFO - [2022-08-27 19:36:40,102] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:40,103] {logging_mixin.py:115} INFO - [2022-08-27 19:36:40,103] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_analytical_tables_dag.py", line 15
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-08-27 19:36:40,104] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:40,118] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_analytical_tables_dag.py took 0.018 seconds
+[2022-08-27 19:36:42,110] {processor.py:153} INFO - Started process (PID=8316) to work on /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:42,111] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_analytical_tables_dag.py for tasks to queue
+[2022-08-27 19:36:42,111] {logging_mixin.py:115} INFO - [2022-08-27 19:36:42,111] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:42,113] {logging_mixin.py:115} INFO - [2022-08-27 19:36:42,112] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_analytical_tables_dag.py", line 15
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-08-27 19:36:42,113] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:42,125] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_analytical_tables_dag.py took 0.017 seconds
+[2022-08-27 19:36:56,018] {processor.py:153} INFO - Started process (PID=8346) to work on /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:56,019] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_analytical_tables_dag.py for tasks to queue
+[2022-08-27 19:36:56,020] {logging_mixin.py:115} INFO - [2022-08-27 19:36:56,020] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:56,025] {logging_mixin.py:115} INFO - [2022-08-27 19:36:56,023] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_analytical_tables_dag.py", line 15
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-08-27 19:36:56,026] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_analytical_tables_dag.py
+[2022-08-27 19:36:56,059] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_analytical_tables_dag.py took 0.050 seconds

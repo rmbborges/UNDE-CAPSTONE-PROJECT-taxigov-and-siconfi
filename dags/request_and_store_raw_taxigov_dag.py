@@ -1,5 +1,4 @@
 from airflow import DAG
-from airflow.operators.python_operator import PythonOperator
 from airflow.operators.postgres_operator import PostgresOperator
 from airflow.providers.amazon.aws.operators.s3 import S3CreateObjectOperator
 from airflow.providers.amazon.aws.transfers.s3_to_redshift import S3ToRedshiftOperator
@@ -23,8 +22,9 @@ def request_taxi_rides_data():
     return data
 
 dag = DAG(
-    "taxi_rides_data",
+    "request_and_store_raw_taxigov_data",
     start_date=datetime.datetime.now(),
+    schedule_interval="@monthly"
 )
 
 create_object_task = S3CreateObjectOperator(

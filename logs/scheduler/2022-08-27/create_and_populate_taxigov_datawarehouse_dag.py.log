@@ -166,3 +166,10 @@ SyntaxError: invalid syntax
 [2022-08-27 19:48:52,462] {logging_mixin.py:115} INFO - [2022-08-27 19:48:52,462] {dag.py:2420} INFO - Sync 1 DAGs
 [2022-08-27 19:48:52,484] {logging_mixin.py:115} INFO - [2022-08-27 19:48:52,484] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
 [2022-08-27 19:48:52,492] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.050 seconds
+[2022-08-27 19:49:22,840] {processor.py:153} INFO - Started process (PID=9817) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-27 19:49:22,841] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-27 19:49:22,842] {logging_mixin.py:115} INFO - [2022-08-27 19:49:22,842] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-27 19:49:22,863] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-27 19:49:22,913] {logging_mixin.py:115} INFO - [2022-08-27 19:49:22,913] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 19:49:22,926] {logging_mixin.py:115} INFO - [2022-08-27 19:49:22,926] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-27 19:49:22,933] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.100 seconds

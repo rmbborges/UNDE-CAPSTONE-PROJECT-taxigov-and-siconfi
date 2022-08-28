@@ -421,3 +421,12 @@
 [2022-08-27 19:48:51,051] {processor.py:651} INFO - DAG(s) dict_keys(['request_and_store_raw_taxigov_data']) retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
 [2022-08-27 19:48:53,748] {logging_mixin.py:115} INFO - [2022-08-27 19:48:53,748] {dag.py:2420} INFO - Sync 1 DAGs
 [2022-08-27 19:48:53,764] {logging_mixin.py:115} INFO - [2022-08-27 19:48:53,764] {dag.py:2972} INFO - Setting next_dagrun for request_and_store_raw_taxigov_data to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-27 19:48:59,115] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 12.689 seconds
+[2022-08-27 19:49:29,341] {processor.py:153} INFO - Started process (PID=9831) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-27 19:49:29,341] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
+[2022-08-27 19:49:29,342] {logging_mixin.py:115} INFO - [2022-08-27 19:49:29,342] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-27 19:49:32,474] {logging_mixin.py:115} INFO - [2022-08-27 19:49:32,474] {request_and_store_raw_taxigov_dag.py:17} INFO - Request result: 200
+[2022-08-27 19:49:32,941] {processor.py:651} INFO - DAG(s) dict_keys(['request_and_store_raw_taxigov_data']) retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-27 19:49:35,671] {logging_mixin.py:115} INFO - [2022-08-27 19:49:35,670] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 19:49:35,687] {logging_mixin.py:115} INFO - [2022-08-27 19:49:35,686] {dag.py:2972} INFO - Setting next_dagrun for request_and_store_raw_taxigov_data to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-27 19:49:40,993] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 11.656 seconds

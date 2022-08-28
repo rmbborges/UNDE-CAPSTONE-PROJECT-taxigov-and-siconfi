@@ -2693,3 +2693,531 @@
 [2022-08-28 12:15:41,716] {logging_mixin.py:115} INFO - [2022-08-28 12:15:41,716] {dag.py:2420} INFO - Sync 1 DAGs
 [2022-08-28 12:15:41,731] {logging_mixin.py:115} INFO - [2022-08-28 12:15:41,731] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
 [2022-08-28 12:15:41,739] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.080 seconds
+[2022-08-28 12:16:12,356] {processor.py:153} INFO - Started process (PID=23113) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:16:12,361] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:16:12,361] {logging_mixin.py:115} INFO - [2022-08-28 12:16:12,361] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:16:12,368] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:16:12,415] {logging_mixin.py:115} INFO - [2022-08-28 12:16:12,415] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:16:12,429] {logging_mixin.py:115} INFO - [2022-08-28 12:16:12,429] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:16:12,436] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.082 seconds
+[2022-08-28 12:16:43,345] {processor.py:153} INFO - Started process (PID=23175) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:16:43,351] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:16:43,351] {logging_mixin.py:115} INFO - [2022-08-28 12:16:43,351] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:16:43,358] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:16:43,403] {logging_mixin.py:115} INFO - [2022-08-28 12:16:43,403] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:16:43,417] {logging_mixin.py:115} INFO - [2022-08-28 12:16:43,417] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:16:43,426] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.082 seconds
+[2022-08-28 12:17:14,279] {processor.py:153} INFO - Started process (PID=23238) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:17:14,284] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:17:14,284] {logging_mixin.py:115} INFO - [2022-08-28 12:17:14,284] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:17:14,291] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:17:14,338] {logging_mixin.py:115} INFO - [2022-08-28 12:17:14,337] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:17:14,352] {logging_mixin.py:115} INFO - [2022-08-28 12:17:14,352] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:17:14,360] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.083 seconds
+[2022-08-28 12:17:44,472] {processor.py:153} INFO - Started process (PID=23291) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:17:44,478] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:17:44,478] {logging_mixin.py:115} INFO - [2022-08-28 12:17:44,478] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:17:44,485] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:17:44,528] {logging_mixin.py:115} INFO - [2022-08-28 12:17:44,528] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:17:44,543] {logging_mixin.py:115} INFO - [2022-08-28 12:17:44,543] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:17:44,551] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.081 seconds
+[2022-08-28 12:18:14,568] {processor.py:153} INFO - Started process (PID=23355) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:18:14,569] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:18:14,569] {logging_mixin.py:115} INFO - [2022-08-28 12:18:14,569] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:18:14,575] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:18:14,620] {logging_mixin.py:115} INFO - [2022-08-28 12:18:14,620] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:18:14,634] {logging_mixin.py:115} INFO - [2022-08-28 12:18:14,634] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:18:14,642] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.075 seconds
+[2022-08-28 12:18:45,555] {processor.py:153} INFO - Started process (PID=23416) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:18:45,560] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:18:45,560] {logging_mixin.py:115} INFO - [2022-08-28 12:18:45,560] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:18:45,566] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:18:45,612] {logging_mixin.py:115} INFO - [2022-08-28 12:18:45,611] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:18:45,626] {logging_mixin.py:115} INFO - [2022-08-28 12:18:45,626] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:18:45,634] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.086 seconds
+[2022-08-28 12:19:15,796] {processor.py:153} INFO - Started process (PID=23477) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:19:15,802] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:19:15,802] {logging_mixin.py:115} INFO - [2022-08-28 12:19:15,802] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:19:15,811] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:19:15,870] {logging_mixin.py:115} INFO - [2022-08-28 12:19:15,870] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:19:15,888] {logging_mixin.py:115} INFO - [2022-08-28 12:19:15,888] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:19:15,901] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.107 seconds
+[2022-08-28 12:19:46,358] {processor.py:153} INFO - Started process (PID=23532) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:19:46,359] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:19:46,359] {logging_mixin.py:115} INFO - [2022-08-28 12:19:46,359] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:19:46,366] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:19:46,417] {logging_mixin.py:115} INFO - [2022-08-28 12:19:46,417] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:19:46,433] {logging_mixin.py:115} INFO - [2022-08-28 12:19:46,433] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:19:46,442] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.086 seconds
+[2022-08-28 12:20:05,422] {processor.py:153} INFO - Started process (PID=23586) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:20:05,422] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:20:05,423] {logging_mixin.py:115} INFO - [2022-08-28 12:20:05,423] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:20:05,429] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:20:05,437] {logging_mixin.py:115} INFO - [2022-08-28 12:20:05,437] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:20:05,455] {logging_mixin.py:115} INFO - [2022-08-28 12:20:05,455] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:20:05,462] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.042 seconds
+[2022-08-28 12:20:31,928] {processor.py:153} INFO - Started process (PID=23639) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:20:31,934] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:20:31,934] {logging_mixin.py:115} INFO - [2022-08-28 12:20:31,934] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:20:31,944] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:20:31,990] {logging_mixin.py:115} INFO - [2022-08-28 12:20:31,990] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:20:32,007] {logging_mixin.py:115} INFO - [2022-08-28 12:20:32,007] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:20:32,016] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.089 seconds
+[2022-08-28 12:21:02,838] {processor.py:153} INFO - Started process (PID=23703) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:21:02,843] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:21:02,844] {logging_mixin.py:115} INFO - [2022-08-28 12:21:02,844] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:21:02,851] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:21:02,899] {logging_mixin.py:115} INFO - [2022-08-28 12:21:02,899] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:21:02,913] {logging_mixin.py:115} INFO - [2022-08-28 12:21:02,913] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:21:02,920] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.084 seconds
+[2022-08-28 12:21:33,106] {processor.py:153} INFO - Started process (PID=23765) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:21:33,107] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:21:33,107] {logging_mixin.py:115} INFO - [2022-08-28 12:21:33,107] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:21:33,114] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:21:33,159] {logging_mixin.py:115} INFO - [2022-08-28 12:21:33,159] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:21:33,173] {logging_mixin.py:115} INFO - [2022-08-28 12:21:33,173] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:21:33,181] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.077 seconds
+[2022-08-28 12:21:53,041] {processor.py:153} INFO - Started process (PID=23799) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:21:53,042] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:21:53,042] {logging_mixin.py:115} INFO - [2022-08-28 12:21:53,042] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:21:53,050] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:21:53,058] {logging_mixin.py:115} INFO - [2022-08-28 12:21:53,058] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:21:53,073] {logging_mixin.py:115} INFO - [2022-08-28 12:21:53,073] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:21:53,080] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.041 seconds
+[2022-08-28 12:22:04,149] {processor.py:153} INFO - Started process (PID=23828) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:04,155] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:22:04,156] {logging_mixin.py:115} INFO - [2022-08-28 12:22:04,156] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:04,185] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:04,235] {logging_mixin.py:115} INFO - [2022-08-28 12:22:04,235] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:22:04,248] {logging_mixin.py:115} INFO - [2022-08-28 12:22:04,248] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:22:04,260] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.118 seconds
+[2022-08-28 12:22:34,995] {processor.py:153} INFO - Started process (PID=23881) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:35,000] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:22:35,000] {logging_mixin.py:115} INFO - [2022-08-28 12:22:35,000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:35,009] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:35,052] {logging_mixin.py:115} INFO - [2022-08-28 12:22:35,052] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:22:35,069] {logging_mixin.py:115} INFO - [2022-08-28 12:22:35,069] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:22:35,077] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.084 seconds
+[2022-08-28 12:22:44,088] {processor.py:153} INFO - Started process (PID=23892) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:44,088] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:22:44,088] {logging_mixin.py:115} INFO - [2022-08-28 12:22:44,088] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:44,097] {logging_mixin.py:115} INFO - [2022-08-28 12:22:44,096] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 39, in <module>
+    task_id=""
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2022-08-28 12:22:44,097] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:44,111] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.025 seconds
+[2022-08-28 12:22:48,120] {processor.py:153} INFO - Started process (PID=23902) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:48,121] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:22:48,121] {logging_mixin.py:115} INFO - [2022-08-28 12:22:48,121] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:48,135] {logging_mixin.py:115} INFO - [2022-08-28 12:22:48,134] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 39, in <module>
+    task_id=""
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2022-08-28 12:22:48,135] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:48,150] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.033 seconds
+[2022-08-28 12:22:56,485] {processor.py:153} INFO - Started process (PID=23927) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:56,491] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:22:56,492] {logging_mixin.py:115} INFO - [2022-08-28 12:22:56,492] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:56,526] {logging_mixin.py:115} INFO - [2022-08-28 12:22:56,525] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 39, in <module>
+    task_id=""
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2022-08-28 12:22:56,526] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:22:56,538] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.056 seconds
+[2022-08-28 12:23:14,117] {processor.py:153} INFO - Started process (PID=23957) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:14,123] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:23:14,124] {logging_mixin.py:115} INFO - [2022-08-28 12:23:14,124] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:14,154] {logging_mixin.py:115} INFO - [2022-08-28 12:23:14,153] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 39, in <module>
+    task_id="create_dim_requests_table"
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2022-08-28 12:23:14,154] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:14,172] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.063 seconds
+[2022-08-28 12:23:21,542] {processor.py:153} INFO - Started process (PID=23978) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:21,543] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:23:21,543] {logging_mixin.py:115} INFO - [2022-08-28 12:23:21,543] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:21,551] {logging_mixin.py:115} INFO - [2022-08-28 12:23:21,551] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 39, in <module>
+    task_id="create_dim_requests_table"
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2022-08-28 12:23:21,552] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:21,563] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.022 seconds
+[2022-08-28 12:23:29,054] {processor.py:153} INFO - Started process (PID=23995) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:29,054] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:23:29,054] {logging_mixin.py:115} INFO - [2022-08-28 12:23:29,054] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:29,064] {logging_mixin.py:115} INFO - [2022-08-28 12:23:29,064] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 40, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2022-08-28 12:23:29,065] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:29,080] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.028 seconds
+[2022-08-28 12:23:35,317] {processor.py:153} INFO - Started process (PID=24012) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:35,318] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:23:35,318] {logging_mixin.py:115} INFO - [2022-08-28 12:23:35,318] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:35,326] {logging_mixin.py:115} INFO - [2022-08-28 12:23:35,326] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 41, in <module>
+    postgres_conn_id="redshift"
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2022-08-28 12:23:35,326] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:35,338] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.026 seconds
+[2022-08-28 12:23:44,346] {processor.py:153} INFO - Started process (PID=24022) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:44,347] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:23:44,348] {logging_mixin.py:115} INFO - [2022-08-28 12:23:44,348] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:44,365] {logging_mixin.py:115} INFO - [2022-08-28 12:23:44,364] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 41, in <module>
+    postgres_conn_id="redshift_default"
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2022-08-28 12:23:44,366] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:44,387] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.044 seconds
+[2022-08-28 12:23:58,818] {processor.py:153} INFO - Started process (PID=24057) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:58,823] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:23:58,823] {logging_mixin.py:115} INFO - [2022-08-28 12:23:58,823] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:58,824] {logging_mixin.py:115} INFO - [2022-08-28 12:23:58,824] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 43
+    )
+    ^
+SyntaxError: invalid syntax
+[2022-08-28 12:23:58,824] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:23:58,837] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.021 seconds
+[2022-08-28 12:24:17,467] {processor.py:153} INFO - Started process (PID=24086) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:24:17,468] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:24:17,469] {logging_mixin.py:115} INFO - [2022-08-28 12:24:17,469] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:24:17,495] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:24:17,543] {logging_mixin.py:115} INFO - [2022-08-28 12:24:17,543] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:24:17,558] {logging_mixin.py:115} INFO - [2022-08-28 12:24:17,558] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:24:17,568] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.109 seconds
+[2022-08-28 12:24:18,475] {processor.py:153} INFO - Started process (PID=24087) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:24:18,475] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:24:18,476] {logging_mixin.py:115} INFO - [2022-08-28 12:24:18,476] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:24:18,491] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:24:18,501] {logging_mixin.py:115} INFO - [2022-08-28 12:24:18,501] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 12:24:18,516] {logging_mixin.py:115} INFO - [2022-08-28 12:24:18,516] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-28 12:24:18,524] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.054 seconds
+[2022-08-28 12:24:43,110] {processor.py:153} INFO - Started process (PID=24140) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:24:43,110] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:24:43,111] {logging_mixin.py:115} INFO - [2022-08-28 12:24:43,111] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:24:43,120] {logging_mixin.py:115} INFO - [2022-08-28 12:24:43,119] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 56, in <module>
+    sql=sql_statements.CREATE_DIM_REQUESTS_TABLE
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 64, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 764, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/task_group.py", line 210, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'create_dim_requests_table' has already been added to the DAG
+[2022-08-28 12:24:43,120] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:24:43,131] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.023 seconds
+[2022-08-28 12:24:49,159] {processor.py:153} INFO - Started process (PID=24141) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:24:49,159] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:24:49,160] {logging_mixin.py:115} INFO - [2022-08-28 12:24:49,160] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:24:49,171] {logging_mixin.py:115} INFO - [2022-08-28 12:24:49,170] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 56, in <module>
+    sql=sql_statements.CREATE_DIM_DATES_TABLE
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 64, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 764, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/task_group.py", line 210, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'create_dim_requests_table' has already been added to the DAG
+[2022-08-28 12:24:49,171] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:24:49,184] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.028 seconds
+[2022-08-28 12:25:15,195] {processor.py:153} INFO - Started process (PID=24204) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:15,201] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:25:15,202] {logging_mixin.py:115} INFO - [2022-08-28 12:25:15,202] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:15,233] {logging_mixin.py:115} INFO - [2022-08-28 12:25:15,232] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 59, in <module>
+    create_
+NameError: name 'create_' is not defined
+[2022-08-28 12:25:15,233] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:15,251] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.064 seconds
+[2022-08-28 12:25:39,292] {processor.py:153} INFO - Started process (PID=24257) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:39,293] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:25:39,293] {logging_mixin.py:115} INFO - [2022-08-28 12:25:39,293] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:39,302] {logging_mixin.py:115} INFO - [2022-08-28 12:25:39,301] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 59, in <module>
+    create_fact_daily_rides_table_task = PostgresOperator(
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2022-08-28 12:25:39,302] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:39,313] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.023 seconds
+[2022-08-28 12:25:49,337] {processor.py:153} INFO - Started process (PID=24267) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:49,337] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:25:49,337] {logging_mixin.py:115} INFO - [2022-08-28 12:25:49,337] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:49,347] {logging_mixin.py:115} INFO - [2022-08-28 12:25:49,347] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 60, in <module>
+    task_id="create_fact_daily_rides_table",
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2022-08-28 12:25:49,348] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:49,359] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.024 seconds
+[2022-08-28 12:25:51,359] {processor.py:153} INFO - Started process (PID=24269) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:51,359] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:25:51,359] {logging_mixin.py:115} INFO - [2022-08-28 12:25:51,359] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:51,368] {logging_mixin.py:115} INFO - [2022-08-28 12:25:51,367] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 61, in <module>
+    dag=dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2022-08-28 12:25:51,368] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:51,380] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.023 seconds
+[2022-08-28 12:25:58,550] {processor.py:153} INFO - Started process (PID=24299) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:58,551] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:25:58,551] {logging_mixin.py:115} INFO - [2022-08-28 12:25:58,551] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:58,560] {logging_mixin.py:115} INFO - [2022-08-28 12:25:58,559] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 62, in <module>
+    postgress_conn_id="redshift_default"
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2022-08-28 12:25:58,560] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:25:58,571] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.030 seconds
+[2022-08-28 12:26:05,267] {processor.py:153} INFO - Started process (PID=24314) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:26:05,267] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:26:05,269] {logging_mixin.py:115} INFO - [2022-08-28 12:26:05,268] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:26:05,299] {logging_mixin.py:115} INFO - [2022-08-28 12:26:05,297] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 63, in <module>
+    sql=sql_statements.CREATE_FACT_DAILY_RIDES_TABLE
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 64, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 744, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to PostgresOperator (task_id: create_fact_daily_rides_table). Invalid arguments were:
+**kwargs: {'postgress_conn_id': 'redshift_default'}
+[2022-08-28 12:26:05,299] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:26:05,314] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.056 seconds
+[2022-08-28 12:26:31,113] {processor.py:153} INFO - Started process (PID=24365) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:26:31,119] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:26:31,119] {logging_mixin.py:115} INFO - [2022-08-28 12:26:31,119] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:26:31,129] {logging_mixin.py:115} INFO - [2022-08-28 12:26:31,128] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 63, in <module>
+    sql=sql_statements.CREATE_FACT_DAILY_RIDES_TABLE
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 64, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 744, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to PostgresOperator (task_id: create_fact_daily_rides_table). Invalid arguments were:
+**kwargs: {'postgress_conn_id': 'redshift_default'}
+[2022-08-28 12:26:31,129] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:26:31,143] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.032 seconds
+[2022-08-28 12:26:41,486] {processor.py:153} INFO - Started process (PID=24386) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:26:41,491] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:26:41,491] {logging_mixin.py:115} INFO - [2022-08-28 12:26:41,491] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:26:41,501] {logging_mixin.py:115} INFO - [2022-08-28 12:26:41,500] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 63, in <module>
+    sql=sql_statements.CREATE_FACT_DAILY_RIDES_TABLE
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 64, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 744, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to PostgresOperator (task_id: create_fact_daily_rides_table). Invalid arguments were:
+**kwargs: {'postgress_conn_id': 'redshift_default'}
+[2022-08-28 12:26:41,501] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:26:41,516] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.032 seconds
+[2022-08-28 12:26:50,575] {processor.py:153} INFO - Started process (PID=24388) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:26:50,575] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:26:50,575] {logging_mixin.py:115} INFO - [2022-08-28 12:26:50,575] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:26:50,585] {logging_mixin.py:115} INFO - [2022-08-28 12:26:50,585] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 63, in <module>
+    sql=sql_statements.CREATE_FACT_DAILY_RIDES_TABLE
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 64, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 744, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to PostgresOperator (task_id: create_fact_daily_rides_table). Invalid arguments were:
+**kwargs: {'postgress_conn_id': 'redshift_default'}
+[2022-08-28 12:26:50,585] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:26:50,599] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.026 seconds
+[2022-08-28 12:27:21,482] {processor.py:153} INFO - Started process (PID=24450) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:27:21,488] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:27:21,490] {logging_mixin.py:115} INFO - [2022-08-28 12:27:21,489] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:27:21,512] {logging_mixin.py:115} INFO - [2022-08-28 12:27:21,511] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 63, in <module>
+    sql=sql_statements.CREATE_FACT_DAILY_RIDES_TABLE
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 64, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 744, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to PostgresOperator (task_id: create_fact_daily_rides_table). Invalid arguments were:
+**kwargs: {'postgress_conn_id': 'redshift_default'}
+[2022-08-28 12:27:21,513] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:27:21,525] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.052 seconds
+[2022-08-28 12:27:38,671] {processor.py:153} INFO - Started process (PID=24503) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:27:38,676] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-28 12:27:38,676] {logging_mixin.py:115} INFO - [2022-08-28 12:27:38,676] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:27:38,685] {logging_mixin.py:115} INFO - [2022-08-28 12:27:38,685] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py", line 63, in <module>
+    sql=sql_statements.CREATE_FACT_DAILY_RIDES_TABLE
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 64, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 744, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to PostgresOperator (task_id: create_fact_daily_rides_table). Invalid arguments were:
+**kwargs: {'postgress_conn_id': 'redshift_default'}
+[2022-08-28 12:27:38,686] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-28 12:27:38,698] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.029 seconds

@@ -1,5 +1,6 @@
 from airflow import DAG
 from airflow.operators.postgres_operator import PostgresOperator
+from airflow.operators.python_operator import PythonOperator
 from airflow.hooks.postgres_hook import PostgresHook
 
 import sql_statements
@@ -7,7 +8,7 @@ import sql_statements
 import datetime
 import logging
 
-def check__dependencies(*args, **kwargs):
+def check_dependencies(*args, **kwargs):
     table = kwargs["params"]["table"]
     redshift_hook = PostgresHook("redshift")
     records = redshift_hook.get_records(f"SELECT COUNT(*) FROM {table}")
@@ -24,3 +25,42 @@ dag = DAG(
     schedule_interval="@monthly"
 )
 
+check_raw_taxigov_quality_task = PythonOperator(
+    task_id="check_taxigov_data",
+    dag=dag,
+    python_callable=check_dependencies,
+    provide_context=True,
+    params={
+        "table": "raw__taxigov_corridas",
+    }
+)
+
+create_dim_requests_table_task = PostgresOperator(
+    task_id="create_dim_requests_table",
+    dag=dag,
+    postgres_conn_id="redshift_default",
+    sql=sql_statements.CREATE_DIM_REQUESTS_TABLE
+)
+
+create_dim_rides_table_task = PostgresOperator(
+    task_id="create_dim_rides_table",
+    dag=dag,
+    postgres_conn_id="redshift_default",
+    sql=sql_statements.CREATE_DIM_RIDES_TABLE
+)
+
+create_dim_dates_table_task = PostgresOperator(
+    task_id="create_dim_dates_table",
+    dag=dag,
+    postgres_conn_id="redshift_default",
+    sql=sql_statements.CREATE_DIM_DATES_TABLE
+)
+
+create_fact_daily_rides_table_task = PostgresOperator(
+    task_id="create_fact_daily_rides_table",
+    dag=dag,
+    postgress_conn_id="redshift_default",
+    sql=sql_statements.CREATE_FACT_DAILY_RIDES_TABLE
+)
+
+check_raw_taxigov_quality_task >> [create_dim_requests_table_task, create_dim_rides_table_task, create_dim_dates_table_task] >> create_fact_daily_rides_table_task

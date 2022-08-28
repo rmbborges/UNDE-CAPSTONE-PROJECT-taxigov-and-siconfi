@@ -9148,3 +9148,564 @@ Please take a look at these docs to improve your DAG import time:
 [2022-08-28 12:15:44,021] {processor.py:153} INFO - Started process (PID=23061) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
 [2022-08-28 12:15:44,021] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
 [2022-08-28 12:15:44,021] {logging_mixin.py:115} INFO - [2022-08-28 12:15:44,021] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:16:14,022] {logging_mixin.py:115} INFO - [2022-08-28 12:16:14,022] {timeout.py:67} ERROR - Process timed out, PID: 23061
+[2022-08-28 12:16:14,023] {logging_mixin.py:115} INFO - [2022-08-28 12:16:14,022] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 35, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 16, in request_taxi_rides_data
+    r = requests.get("http://repositorio.dados.gov.br/seges/taxigov/taxigov-corridas-completo.zip")
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/request_and_store_raw_taxigov_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 23061
+[2022-08-28 12:16:14,024] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:16:14,041] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 30.022 seconds
+[2022-08-28 12:16:44,480] {processor.py:153} INFO - Started process (PID=23179) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:16:44,481] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
+[2022-08-28 12:16:44,481] {logging_mixin.py:115} INFO - [2022-08-28 12:16:44,481] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:17:14,482] {logging_mixin.py:115} INFO - [2022-08-28 12:17:14,482] {timeout.py:67} ERROR - Process timed out, PID: 23179
+[2022-08-28 12:17:14,484] {logging_mixin.py:115} INFO - [2022-08-28 12:17:14,482] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 35, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 16, in request_taxi_rides_data
+    r = requests.get("http://repositorio.dados.gov.br/seges/taxigov/taxigov-corridas-completo.zip")
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/request_and_store_raw_taxigov_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 23179
+[2022-08-28 12:17:14,484] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:17:14,498] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 30.020 seconds
+[2022-08-28 12:17:44,540] {processor.py:153} INFO - Started process (PID=23293) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:17:44,541] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
+[2022-08-28 12:17:44,541] {logging_mixin.py:115} INFO - [2022-08-28 12:17:44,541] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:18:14,542] {logging_mixin.py:115} INFO - [2022-08-28 12:18:14,542] {timeout.py:67} ERROR - Process timed out, PID: 23293
+[2022-08-28 12:18:14,547] {logging_mixin.py:115} INFO - [2022-08-28 12:18:14,543] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 35, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 16, in request_taxi_rides_data
+    r = requests.get("http://repositorio.dados.gov.br/seges/taxigov/taxigov-corridas-completo.zip")
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/request_and_store_raw_taxigov_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 23293
+[2022-08-28 12:18:14,548] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:18:14,559] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 30.020 seconds
+[2022-08-28 12:18:45,557] {processor.py:153} INFO - Started process (PID=23417) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:18:45,560] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
+[2022-08-28 12:18:45,560] {logging_mixin.py:115} INFO - [2022-08-28 12:18:45,560] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:19:15,562] {logging_mixin.py:115} INFO - [2022-08-28 12:19:15,561] {timeout.py:67} ERROR - Process timed out, PID: 23417
+[2022-08-28 12:19:15,568] {logging_mixin.py:115} INFO - [2022-08-28 12:19:15,562] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 35, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 16, in request_taxi_rides_data
+    r = requests.get("http://repositorio.dados.gov.br/seges/taxigov/taxigov-corridas-completo.zip")
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/request_and_store_raw_taxigov_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 23417
+[2022-08-28 12:19:15,569] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:19:15,616] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 30.061 seconds
+[2022-08-28 12:19:46,362] {processor.py:153} INFO - Started process (PID=23533) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:19:46,362] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
+[2022-08-28 12:19:46,363] {logging_mixin.py:115} INFO - [2022-08-28 12:19:46,363] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:20:16,364] {logging_mixin.py:115} INFO - [2022-08-28 12:20:16,363] {timeout.py:67} ERROR - Process timed out, PID: 23533
+[2022-08-28 12:20:16,367] {logging_mixin.py:115} INFO - [2022-08-28 12:20:16,364] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 35, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 16, in request_taxi_rides_data
+    r = requests.get("http://repositorio.dados.gov.br/seges/taxigov/taxigov-corridas-completo.zip")
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/request_and_store_raw_taxigov_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 23533
+[2022-08-28 12:20:16,368] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:20:16,383] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 30.023 seconds
+[2022-08-28 12:20:47,036] {processor.py:153} INFO - Started process (PID=23659) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:20:47,038] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
+[2022-08-28 12:20:47,038] {logging_mixin.py:115} INFO - [2022-08-28 12:20:47,038] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:21:17,039] {logging_mixin.py:115} INFO - [2022-08-28 12:21:17,039] {timeout.py:67} ERROR - Process timed out, PID: 23659
+[2022-08-28 12:21:17,045] {logging_mixin.py:115} INFO - [2022-08-28 12:21:17,040] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 35, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 16, in request_taxi_rides_data
+    r = requests.get("http://repositorio.dados.gov.br/seges/taxigov/taxigov-corridas-completo.zip")
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/request_and_store_raw_taxigov_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 23659
+[2022-08-28 12:21:17,046] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:21:17,061] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 30.027 seconds
+[2022-08-28 12:21:47,205] {processor.py:153} INFO - Started process (PID=23774) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:21:47,210] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
+[2022-08-28 12:21:47,210] {logging_mixin.py:115} INFO - [2022-08-28 12:21:47,210] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:22:17,212] {logging_mixin.py:115} INFO - [2022-08-28 12:22:17,211] {timeout.py:67} ERROR - Process timed out, PID: 23774
+[2022-08-28 12:22:17,218] {logging_mixin.py:115} INFO - [2022-08-28 12:22:17,212] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 35, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 16, in request_taxi_rides_data
+    r = requests.get("http://repositorio.dados.gov.br/seges/taxigov/taxigov-corridas-completo.zip")
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/request_and_store_raw_taxigov_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 23774
+[2022-08-28 12:22:17,219] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:22:17,266] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 30.064 seconds
+[2022-08-28 12:22:48,126] {processor.py:153} INFO - Started process (PID=23903) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:22:48,126] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
+[2022-08-28 12:22:48,127] {logging_mixin.py:115} INFO - [2022-08-28 12:22:48,126] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:23:18,128] {logging_mixin.py:115} INFO - [2022-08-28 12:23:18,128] {timeout.py:67} ERROR - Process timed out, PID: 23903
+[2022-08-28 12:23:18,134] {logging_mixin.py:115} INFO - [2022-08-28 12:23:18,129] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 35, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 16, in request_taxi_rides_data
+    r = requests.get("http://repositorio.dados.gov.br/seges/taxigov/taxigov-corridas-completo.zip")
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/request_and_store_raw_taxigov_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 23903
+[2022-08-28 12:23:18,135] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:23:18,179] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 30.057 seconds
+[2022-08-28 12:23:48,381] {processor.py:153} INFO - Started process (PID=24023) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:23:48,386] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
+[2022-08-28 12:23:48,386] {logging_mixin.py:115} INFO - [2022-08-28 12:23:48,386] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:24:18,387] {logging_mixin.py:115} INFO - [2022-08-28 12:24:18,387] {timeout.py:67} ERROR - Process timed out, PID: 24023
+[2022-08-28 12:24:18,393] {logging_mixin.py:115} INFO - [2022-08-28 12:24:18,388] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 35, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 16, in request_taxi_rides_data
+    r = requests.get("http://repositorio.dados.gov.br/seges/taxigov/taxigov-corridas-completo.zip")
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/request_and_store_raw_taxigov_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 24023
+[2022-08-28 12:24:18,394] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:24:18,443] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 30.065 seconds
+[2022-08-28 12:24:49,162] {processor.py:153} INFO - Started process (PID=24142) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:24:49,163] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
+[2022-08-28 12:24:49,163] {logging_mixin.py:115} INFO - [2022-08-28 12:24:49,163] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:25:19,164] {logging_mixin.py:115} INFO - [2022-08-28 12:25:19,164] {timeout.py:67} ERROR - Process timed out, PID: 24142
+[2022-08-28 12:25:19,170] {logging_mixin.py:115} INFO - [2022-08-28 12:25:19,165] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 35, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 16, in request_taxi_rides_data
+    r = requests.get("http://repositorio.dados.gov.br/seges/taxigov/taxigov-corridas-completo.zip")
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/request_and_store_raw_taxigov_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 24142
+[2022-08-28 12:25:19,171] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:25:19,216] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 30.056 seconds
+[2022-08-28 12:25:49,339] {processor.py:153} INFO - Started process (PID=24268) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:25:49,340] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
+[2022-08-28 12:25:49,340] {logging_mixin.py:115} INFO - [2022-08-28 12:25:49,340] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:26:19,341] {logging_mixin.py:115} INFO - [2022-08-28 12:26:19,341] {timeout.py:67} ERROR - Process timed out, PID: 24268
+[2022-08-28 12:26:19,343] {logging_mixin.py:115} INFO - [2022-08-28 12:26:19,341] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 35, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 16, in request_taxi_rides_data
+    r = requests.get("http://repositorio.dados.gov.br/seges/taxigov/taxigov-corridas-completo.zip")
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/request_and_store_raw_taxigov_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 24268
+[2022-08-28 12:26:19,344] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:26:19,363] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 30.026 seconds
+[2022-08-28 12:26:49,556] {processor.py:153} INFO - Started process (PID=24387) to work on /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:26:49,557] {processor.py:641} INFO - Processing file /opt/airflow/dags/request_and_store_raw_taxigov_dag.py for tasks to queue
+[2022-08-28 12:26:49,558] {logging_mixin.py:115} INFO - [2022-08-28 12:26:49,558] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:27:19,560] {logging_mixin.py:115} INFO - [2022-08-28 12:27:19,560] {timeout.py:67} ERROR - Process timed out, PID: 24387
+[2022-08-28 12:27:19,562] {logging_mixin.py:115} INFO - [2022-08-28 12:27:19,560] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 35, in <module>
+    data=request_taxi_rides_data(),
+  File "/opt/airflow/dags/request_and_store_raw_taxigov_dag.py", line 16, in request_taxi_rides_data
+    r = requests.get("http://repositorio.dados.gov.br/seges/taxigov/taxigov-corridas-completo.zip")
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/request_and_store_raw_taxigov_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 24387
+[2022-08-28 12:27:19,562] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/request_and_store_raw_taxigov_dag.py
+[2022-08-28 12:27:19,574] {processor.py:161} INFO - Processing /opt/airflow/dags/request_and_store_raw_taxigov_dag.py took 30.026 seconds

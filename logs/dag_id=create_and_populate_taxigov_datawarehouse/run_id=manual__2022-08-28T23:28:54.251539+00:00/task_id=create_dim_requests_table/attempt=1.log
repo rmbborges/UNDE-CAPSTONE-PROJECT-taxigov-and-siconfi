@@ -1,0 +1,63 @@
+[2022-08-28 23:28:58,574] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: create_and_populate_taxigov_datawarehouse.create_dim_requests_table manual__2022-08-28T23:28:54.251539+00:00 [queued]>
+[2022-08-28 23:28:58,582] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: create_and_populate_taxigov_datawarehouse.create_dim_requests_table manual__2022-08-28T23:28:54.251539+00:00 [queued]>
+[2022-08-28 23:28:58,582] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 23:28:58,582] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-28 23:28:58,582] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 23:28:58,596] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): create_dim_requests_table> on 2022-08-28 23:28:54.251539+00:00
+[2022-08-28 23:28:58,600] {standard_task_runner.py:52} INFO - Started process 2978 to run task
+[2022-08-28 23:28:58,602] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'create_and_populate_taxigov_datawarehouse', 'create_dim_requests_table', 'manual__2022-08-28T23:28:54.251539+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/create_and_populate_taxigov_datawarehouse_dag.py', '--cfg-path', '/tmp/tmppj8l0hcc', '--error-file', '/tmp/tmp9xsl0y5g']
+[2022-08-28 23:28:58,602] {standard_task_runner.py:80} INFO - Job 108: Subtask create_dim_requests_table
+[2022-08-28 23:28:58,642] {task_command.py:371} INFO - Running <TaskInstance: create_and_populate_taxigov_datawarehouse.create_dim_requests_table manual__2022-08-28T23:28:54.251539+00:00 [running]> on host ddc8002727e0
+[2022-08-28 23:28:58,693] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=create_and_populate_taxigov_datawarehouse
+AIRFLOW_CTX_TASK_ID=create_dim_requests_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-28T23:28:54.251539+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-28T23:28:54.251539+00:00
+[2022-08-28 23:28:58,701] {base.py:68} INFO - Using connection ID 'redshift_default' for task execution.
+[2022-08-28 23:28:59,979] {dbapi.py:231} INFO - Running statement: 
+    DROP TABLE IF EXISTS dim_requests;
+
+    CREATE TABLE IF NOT EXISTS dim_requests AS ( 
+        SELECT
+            TO_HEX(
+                SHA2(
+                    CONCAT(
+                        CAST(data_abertura AS STRING), 
+                        nome_orgao
+                    ),
+                    256
+                )
+            ) AS id,
+            UPPER(nome_orgao) AS requested_by,
+            data_abertura AS requested_at,
+            data_despacho AS approved_at,
+            UPPER(motivo_corrida) AS reason,
+            destino_solicitado_latitude AS requested_dropoff_latitude,
+            destino_solicitado_longitude AS requested_dropoff_longitude,
+            conteste_info AS commentary
+        FROM
+            raw__taxigov_corridas
+    );, parameters: None
+[2022-08-28 23:29:00,485] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 211, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 235, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.SyntaxError: syntax error at or near "AS"
+LINE 4:     CREATE TABLE IF NOT EXISTS dim_requests AS ( 
+                                                    ^
+
+[2022-08-28 23:29:00,492] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=create_and_populate_taxigov_datawarehouse, task_id=create_dim_requests_table, execution_date=20220828T232854, start_date=20220828T232858, end_date=20220828T232900
+[2022-08-28 23:29:00,501] {standard_task_runner.py:97} ERROR - Failed to execute job 108 for task create_dim_requests_table (syntax error at or near "AS"
+LINE 4:     CREATE TABLE IF NOT EXISTS dim_requests AS ( 
+                                                    ^
+; 2978)
+[2022-08-28 23:29:00,539] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-08-28 23:29:00,587] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

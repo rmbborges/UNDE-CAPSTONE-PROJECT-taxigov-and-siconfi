@@ -1,0 +1,42 @@
+[2022-08-29 00:00:04,976] {processor.py:153} INFO - Started process (PID=10943) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:00:04,976] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-29 00:00:04,977] {logging_mixin.py:115} INFO - [2022-08-29 00:00:04,977] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:00:04,985] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:00:05,028] {logging_mixin.py:115} INFO - [2022-08-29 00:00:05,028] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-29 00:00:05,041] {logging_mixin.py:115} INFO - [2022-08-29 00:00:05,041] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-29 00:00:05,054] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.080 seconds
+[2022-08-29 00:00:22,544] {processor.py:153} INFO - Started process (PID=10969) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:00:22,544] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-29 00:00:22,544] {logging_mixin.py:115} INFO - [2022-08-29 00:00:22,544] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:00:22,553] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:00:22,561] {logging_mixin.py:115} INFO - [2022-08-29 00:00:22,561] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-29 00:00:22,577] {logging_mixin.py:115} INFO - [2022-08-29 00:00:22,577] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-29 00:00:22,585] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.043 seconds
+[2022-08-29 00:00:41,183] {processor.py:153} INFO - Started process (PID=11012) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:00:41,183] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-29 00:00:41,184] {logging_mixin.py:115} INFO - [2022-08-29 00:00:41,184] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:00:41,193] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:00:41,243] {logging_mixin.py:115} INFO - [2022-08-29 00:00:41,243] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-29 00:00:41,259] {logging_mixin.py:115} INFO - [2022-08-29 00:00:41,259] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-29 00:00:41,269] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.088 seconds
+[2022-08-29 00:01:11,886] {processor.py:153} INFO - Started process (PID=11080) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:01:11,891] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-29 00:01:11,892] {logging_mixin.py:115} INFO - [2022-08-29 00:01:11,892] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:01:11,900] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:01:11,945] {logging_mixin.py:115} INFO - [2022-08-29 00:01:11,945] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-29 00:01:11,962] {logging_mixin.py:115} INFO - [2022-08-29 00:01:11,962] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-29 00:01:11,971] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.086 seconds
+[2022-08-29 00:01:33,283] {processor.py:153} INFO - Started process (PID=11133) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:01:33,283] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-29 00:01:33,284] {logging_mixin.py:115} INFO - [2022-08-29 00:01:33,284] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:01:33,293] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:01:33,301] {logging_mixin.py:115} INFO - [2022-08-29 00:01:33,301] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-29 00:01:33,316] {logging_mixin.py:115} INFO - [2022-08-29 00:01:33,316] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-29 00:01:33,323] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.042 seconds
+[2022-08-29 00:02:03,344] {processor.py:153} INFO - Started process (PID=11187) to work on /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:02:03,345] {processor.py:641} INFO - Processing file /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py for tasks to queue
+[2022-08-29 00:02:03,345] {logging_mixin.py:115} INFO - [2022-08-29 00:02:03,345] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:02:03,354] {processor.py:651} INFO - DAG(s) dict_keys(['create_and_populate_taxigov_datawarehouse']) retrieved from /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py
+[2022-08-29 00:02:03,398] {logging_mixin.py:115} INFO - [2022-08-29 00:02:03,398] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-29 00:02:03,412] {logging_mixin.py:115} INFO - [2022-08-29 00:02:03,412] {dag.py:2972} INFO - Setting next_dagrun for create_and_populate_taxigov_datawarehouse to 2022-09-01T00:00:00+00:00, run_after=2022-10-01T00:00:00+00:00
+[2022-08-29 00:02:03,422] {processor.py:161} INFO - Processing /opt/airflow/dags/create_and_populate_taxigov_datawarehouse_dag.py took 0.079 seconds

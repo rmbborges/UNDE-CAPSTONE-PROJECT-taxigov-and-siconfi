@@ -1,0 +1,70 @@
+[2022-08-28 23:58:48,447] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: create_and_populate_taxigov_datawarehouse.create_fact_daily_rides_table manual__2022-08-28T23:58:47.937576+00:00 [queued]>
+[2022-08-28 23:58:48,453] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: create_and_populate_taxigov_datawarehouse.create_fact_daily_rides_table manual__2022-08-28T23:58:47.937576+00:00 [queued]>
+[2022-08-28 23:58:48,453] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 23:58:48,453] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-28 23:58:48,454] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 23:58:48,463] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): create_fact_daily_rides_table> on 2022-08-28 23:58:47.937576+00:00
+[2022-08-28 23:58:48,466] {standard_task_runner.py:52} INFO - Started process 4522 to run task
+[2022-08-28 23:58:48,468] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'create_and_populate_taxigov_datawarehouse', 'create_fact_daily_rides_table', 'manual__2022-08-28T23:58:47.937576+00:00', '--job-id', '157', '--raw', '--subdir', 'DAGS_FOLDER/create_and_populate_taxigov_datawarehouse_dag.py', '--cfg-path', '/tmp/tmp0cgp0sx3', '--error-file', '/tmp/tmpcuuu8bmm']
+[2022-08-28 23:58:48,469] {standard_task_runner.py:80} INFO - Job 157: Subtask create_fact_daily_rides_table
+[2022-08-28 23:58:48,518] {task_command.py:371} INFO - Running <TaskInstance: create_and_populate_taxigov_datawarehouse.create_fact_daily_rides_table manual__2022-08-28T23:58:47.937576+00:00 [running]> on host ddc8002727e0
+[2022-08-28 23:58:48,570] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=create_and_populate_taxigov_datawarehouse
+AIRFLOW_CTX_TASK_ID=create_fact_daily_rides_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-28T23:58:47.937576+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-28T23:58:47.937576+00:00
+[2022-08-28 23:58:48,577] {base.py:68} INFO - Using connection ID 'redshift_default' for task execution.
+[2022-08-28 23:58:49,778] {dbapi.py:231} INFO - Running statement: 
+    DROP TABLE IF EXISTS fact_daily_rides;
+
+    CREATE TABLE fact_daily_rides AS (
+        WITH 
+        rides AS (
+            SELECT
+                dim_rides.*,
+                DATEDIFF(
+                    MINUTE,
+                    started_at,
+                    ended_at
+                ) AS ride_duration
+            FROM
+                dim_rides
+        ),
+        requests AS (
+            SELECT
+                dim_requests.*,
+                DATEDIFF(
+                    MINUTE,
+                    requested_at,
+                    approved_at
+                ) AS request_sla
+            FROM
+                dim_requests
+        )
+
+        SELECT
+            DATE(started_at) AS date,
+            COUNT(DISTINCT(requests.id)) AS ride_requests_count,
+            COUNT(DISTINCT(rides.id)) AS rides_count,
+            SUM(cost) AS total_rides_cost,
+            SUM(cost)/COUNT(DISTINCT(rides.id)) AS average_cost_per_kilometer,
+            AVG(ride_duration) AS average_ride_duration,
+            AVG(request_sla) AS average_ride_request_sla,
+            AVG(cost) AS average_ride_cost,
+            AVG(distance) AS average_ride_distance
+        FROM
+            rides
+        LEFT JOIN 
+            requests ON rides.request_id = requests.id
+        GROUP BY 
+            date
+    );, parameters: None
+[2022-08-28 23:59:05,327] {postgres.py:94} INFO - INFO:  Table "fact_daily_rides" does not exist and will be skipped
+
+[2022-08-28 23:59:05,337] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=create_and_populate_taxigov_datawarehouse, task_id=create_fact_daily_rides_table, execution_date=20220828T235847, start_date=20220828T235848, end_date=20220828T235905
+[2022-08-28 23:59:05,358] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-28 23:59:05,375] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -35,16 +35,14 @@ CREATE_RAW__TAXIGOV_CORRIDAS_TABLE = """
 CREATE_DIM_REQUESTS_TABLE = """
     DROP TABLE IF EXISTS dim_requests;
 
-    CREATE TABLE IF NOT EXISTS dim_requests AS 
+    CREATE TABLE dim_requests AS ( 
         SELECT
-            TO_HEX(
-                SHA2(
-                    CONCAT(
-                        CAST(data_abertura AS STRING), 
-                        nome_orgao
-                    ),
-                    256
-                )
+            SHA2(
+                CONCAT(
+                    CAST(data_abertura AS VARCHAR), 
+                    nome_orgao
+                ),
+                256
             ) AS id,
             UPPER(nome_orgao) AS requested_by,
             data_abertura AS requested_at,
@@ -54,29 +52,26 @@ CREATE_DIM_REQUESTS_TABLE = """
             destino_solicitado_longitude AS requested_dropoff_longitude,
             conteste_info AS commentary
         FROM
-            raw__taxigov_corridas;
+            raw__taxigov_corridas
+    );
 """
 
 CREATE_DIM_RIDES_TABLE = """
     DROP TABLE IF EXISTS dim_rides;
 
-    CREATE TABLE IF NOT EXISTS dim_rides AS 
+    CREATE TABLE dim_rides AS ( 
         SELECT
-            TO_HEX(
-                SHA2(
-                    qru_corrida,
-                    256
-                )
+            SHA2(
+                qru_corrida,
+                256
             ) AS id,
-            TO_HEX(
-                SHA2(
-                    CONCAT(
-                        CAST(data_abertura AS STRING), 
-                        nome_orgao
-                    ),
-                    256
-                )
-            ) AS request_id
+            SHA2(
+                CONCAT(
+                    CAST(data_abertura AS VARCHAR), 
+                    nome_orgao
+                ),
+                256
+            ) AS request_id,
             data_inicio AS started_at,
             data_final AS ended_at,
             origem_latitude AS pickup_latitude,
@@ -86,23 +81,46 @@ CREATE_DIM_RIDES_TABLE = """
             km_total AS distance,
             valor_corrida AS cost
         FROM
-            raw__taxigov_corridas;
+            raw__taxigov_corridas
+    );
 """
 
 CREATE_DIM_DATES_TABLE = """
     DROP TABLE IF EXISTS dim_dates;
 
-    CREATE TABLE IF NOT EXISTS dim_dates AS 
+    CREATE TABLE dim_dates AS (
         WITH
         distinct_timestamps AS (
+            SELECT 
+                data_abertura AS ts
+            FROM
+                raw__taxigov_corridas
+
+            UNION DISTINCT
+
             SELECT
-                ARRAY(
-                    data_abertura,
-                    data_despacho,
-                    data_local_embarque,
-                    data_inicio,
-                    data_final
-                ) AS timestamp_array
+                data_despacho AS ts
+            FROM
+                raw__taxigov_corridas 
+            
+            UNION DISTINCT
+
+            SELECT
+                data_local_embarque AS ts
+            FROM
+                raw__taxigov_corridas 
+
+            UNION DISTINCT
+
+            SELECT
+                data_inicio AS ts
+            FROM
+                raw__taxigov_corridas 
+
+            UNION DISTINCT
+
+            SELECT
+                data_final AS ts
             FROM
                 raw__taxigov_corridas
         )
@@ -119,41 +137,54 @@ CREATE_DIM_DATES_TABLE = """
                     ELSE FALSE 
                 END AS is_weekend
         FROM
-            distinct_timestamps,
-            distinct_timestamps.timestamp_array AS ts;
+            distinct_timestamps
+    );
 """
 
 CREATE_FACT_DAILY_RIDES_TABLE = """
     DROP TABLE IF EXISTS fact_daily_rides;
 
-    CREATE TABLE IF NOT EXISTS fact_daily_rides AS
-        SELECT
-            DATE(started_at) AS date,
-            COUNT(DISTINCT(ride_requests.id)) AS ride_requests_count,
-            COUNT(DISTINCT(rides.id)) AS rides_count
-            SUM(cost) AS total_rides_cost,
-            SUM(cost)/COUNT(DISTINCT(rides_count)) AS average_cost_per_kilometer,
-            AVG(
+    CREATE TABLE fact_daily_rides AS (
+        WITH 
+        rides AS (
+            SELECT
+                dim_rides.*,
                 DATEDIFF(
                     MINUTE,
                     started_at,
                     ended_at
-                )
-            ) AS average_ride_duration,
-            AVG(
+                ) AS ride_duration
+            FROM
+                dim_rides
+        ),
+        requests AS (
+            SELECT
+                dim_requests.*,
                 DATEDIFF(
                     MINUTE,
                     requested_at,
                     approved_at
-                )
-            ) AS average_ride_request_sla,
+                ) AS request_sla
+            FROM
+                dim_requests
+        )
+
+        SELECT
+            DATE(started_at) AS date,
+            COUNT(DISTINCT(requests.id)) AS ride_requests_count,
+            COUNT(DISTINCT(rides.id)) AS rides_count,
+            SUM(cost) AS total_rides_cost,
+            SUM(cost)/COUNT(DISTINCT(rides.id)) AS average_cost_per_kilometer,
+            AVG(ride_duration) AS average_ride_duration,
+            AVG(request_sla) AS average_ride_request_sla,
             AVG(cost) AS average_ride_cost,
             AVG(distance) AS average_ride_distance
         FROM
-            dim_rides
+            rides
         LEFT JOIN 
-            dim_requests ON dim_rides.request_id = dim_requests.id
+            requests ON rides.request_id = requests.id
         GROUP BY 
-            date;
+            date
+    );
 """
 

@@ -10,7 +10,7 @@ import logging
 
 def check_dependencies(*args, **kwargs):
     table = kwargs["params"]["table"]
-    redshift_hook = PostgresHook("redshift")
+    redshift_hook = PostgresHook("redshift_default")
     records = redshift_hook.get_records(f"SELECT COUNT(*) FROM {table}")
     if len(records) < 1 or len(records[0]) < 1:
         raise ValueError(f"Upstream Data Quality check failed. The request for {table} data returned no resuilts.")
@@ -59,7 +59,7 @@ create_dim_dates_table_task = PostgresOperator(
 create_fact_daily_rides_table_task = PostgresOperator(
     task_id="create_fact_daily_rides_table",
     dag=dag,
-    postgress_conn_id="redshift_default",
+    postgres_conn_id="redshift_default",
     sql=sql_statements.CREATE_FACT_DAILY_RIDES_TABLE
 )
 

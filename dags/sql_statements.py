@@ -187,4 +187,3 @@ CREATE_FACT_DAILY_RIDES_TABLE = """
             date
     );
 """
-

@@ -8,6 +8,16 @@ import sql_statements
 import datetime
 import logging
 
+default_args = {
+    "owner": "udacity",
+    "start_date": datetime.datetime.now(),
+    "depends_on_past": False,
+    "retries": 3,
+    "retry_delay": 300,
+    "catchup": False,
+    "email_on_retry": False
+}
+
 def check_dependencies(*args, **kwargs):
     table = kwargs["params"]["table"]
     redshift_hook = PostgresHook("redshift_default")
@@ -18,16 +28,6 @@ def check_dependencies(*args, **kwargs):
     if num_records < 1:
         raise ValueError(f"Upstream Data Quality check failed. {table} contained 0 rows")
     logging.info(f"Data Quality for table {table} checks passed.")
-
-default_args = {
-    "owner": "udacity",
-    "start_date": datetime.datetime.now(),
-    "depends_on_past": False,
-    "retries": 3,
-    "retry_delay": 300,
-    "catchup": False,
-    "email_on_retry": False
-}
 
 dag = DAG(
     "create_and_populate_taxigov_datawarehouse",

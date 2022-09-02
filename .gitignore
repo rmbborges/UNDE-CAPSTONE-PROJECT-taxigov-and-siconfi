@@ -1,0 +1,3 @@
+logs/*
+jupyter-notebooks/batch/*
+jupyter-notebooks/.ipynb_checkpoints

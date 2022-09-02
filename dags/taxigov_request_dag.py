@@ -74,3 +74,4 @@ transfer_s3_to_redshift_task = S3ToRedshiftOperator(
 )
 
 create_object_task >> create_taxigov_raw_table_task >> transfer_s3_to_redshift_task
+

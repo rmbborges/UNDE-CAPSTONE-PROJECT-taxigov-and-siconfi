@@ -76,3 +76,4 @@ create_fact_daily_rides_table_task = PostgresOperator(
 )
 
 check_raw_taxigov_quality_task >> [create_dim_requests_table_task, create_dim_rides_table_task, create_dim_dates_table_task] >> create_fact_daily_rides_table_task
+

@@ -1,7 +1,6 @@
 from airflow import DAG
 from airflow.operators.postgres_operator import PostgresOperator
-from airflow.operators.python_operator import PythonOperator
-from airflow.hooks.postgres_hook import PostgresHook
+from airflow.operators import DataQualityOperator
 
 import sql_statements
 
@@ -18,17 +17,6 @@ default_args = {
     "email_on_retry": False
 }
 
-def check_dependencies(*args, **kwargs):
-    table = kwargs["params"]["table"]
-    redshift_hook = PostgresHook("redshift_default")
-    records = redshift_hook.get_records(f"SELECT COUNT(*) FROM {table}")
-    if len(records) < 1 or len(records[0]) < 1:
-        raise ValueError(f"Upstream Data Quality check failed. The request for {table} data returned no resuilts.")
-    num_records = records[0][0]
-    if num_records < 1:
-        raise ValueError(f"Upstream Data Quality check failed. {table} contained 0 rows")
-    logging.info(f"Data Quality for table {table} checks passed.")
-
 dag = DAG(
     "create_and_populate_taxigov_datawarehouse",
     default_args=default_args,
@@ -37,14 +25,11 @@ dag = DAG(
     schedule_interval="@monthly"
 )
 
-check_raw_taxigov_quality_task = PythonOperator(
-    task_id="check_taxigov_data",
+check_raw_taxigov_task = DataQualityOperator(
+    task_id="check_raw_taxigov_data",
     dag=dag,
-    python_callable=check_dependencies,
-    provide_context=True,
-    params={
-        "table": "raw__taxigov_corridas",
-    }
+    postgres_conn_id="redshift_default",
+    table="raw__taxigov_corridas"
 )
 
 create_dim_requests_table_task = PostgresOperator(
@@ -75,5 +60,5 @@ create_fact_daily_rides_table_task = PostgresOperator(
     sql=sql_statements.CREATE_FACT_DAILY_RIDES_TABLE
 )
 
-check_raw_taxigov_quality_task >> [create_dim_requests_table_task, create_dim_rides_table_task, create_dim_dates_table_task] >> create_fact_daily_rides_table_task
+check_raw_taxigov_task >> [create_dim_requests_table_task, create_dim_rides_table_task, create_dim_dates_table_task] >> create_fact_daily_rides_table_task
 

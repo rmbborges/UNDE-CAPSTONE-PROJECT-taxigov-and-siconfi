@@ -226,9 +226,9 @@ CREATE_RAW__PUBLIC_EXPENSES_DATA = """
 """
 
 CREATE_DIM_COST_CENTERS = """
-    DROP TABLE IF EXISTS cost_centers;
+    DROP TABLE IF EXISTS dim_cost_centers;
 
-    CREATE TABLE cost_centers AS (
+    CREATE TABLE dim_cost_centers AS (
         SELECT
             DISTINCT
                 COALESCE(
@@ -249,9 +249,9 @@ CREATE_DIM_COST_CENTERS = """
 """
 
 CREATE_DIM_COST_CENTERS_RELATIONSHIP = """
-    DROP TABLE IF EXISTS cost_centers_relationship;
+    DROP TABLE IF EXISTS dim_cost_centers_relationship;
 
-    CREATE TABLE cost_centers_relationship AS (
+    CREATE TABLE dim_cost_centers_relationship AS (
         SELECT
             DISTINCT
                 co_siorg_n04 AS first_level_cost_center,
@@ -322,7 +322,7 @@ CREATE_FACT_MONTHLY_EXPENSES = """
         FROM
             dim_expenses
         LEFT JOIN
-            cost_centers_relationship ON dim_expenses.cost_center = cost_centers_relationship.fourth_level_cost_center
+            dim_cost_centers_relationship ON dim_expenses.cost_center = dim_cost_centers_relationship.fourth_level_cost_center
         GROUP BY 
             reference_year,
             reference_month,

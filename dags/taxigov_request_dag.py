@@ -21,8 +21,8 @@ default_args = {
     "owner": "udacity",
     "start_date": datetime.datetime.now(),
     "depends_on_past": False,
-    "retries": 3,
-    "retry_delay": 300,
+    "retries": 0,
+    "retry_delay": 60,
     "catchup": False,
     "email_on_retry": False
 }
@@ -39,7 +39,7 @@ def request_taxi_rides_data():
 dag = DAG(
     "request_and_store_raw_taxigov_data",
     default_args=default_args,
-    description="Request taxigov data and store it in S3",
+    description="Requests taxigov data, stores it in S3 and populate raw__taxigov_corridas table in Redshift",
     max_active_runs=1,
     schedule_interval="@monthly"
 )
@@ -65,7 +65,7 @@ transfer_s3_to_redshift_task = S3ToRedshiftOperator(
     task_id='transfer_s3_to_redshift',
     redshift_conn_id="redshift_default",
     aws_conn_id="aws_credentials",
-    s3_bucket="brazilian-politicians-taxi-rides",
+    s3_bucket=taxigov_s3_bucket,
     s3_key=taxigov_csv_file,
     schema="PUBLIC",
     table="raw__taxigov_corridas",

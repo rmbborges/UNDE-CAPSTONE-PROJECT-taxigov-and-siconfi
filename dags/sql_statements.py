@@ -187,3 +187,148 @@ CREATE_FACT_DAILY_RIDES_TABLE = """
             date
     );
 """
+
+CREATE_RAW__PUBLIC_EXPENSES_DATA = """
+    DROP TABLE IF EXISTS raw__public_expenses_data;
+
+    CREATE TABLE IF NOT EXISTS raw__public_expenses_data (
+        co_siorg_n04 VARCHAR(20),
+        ds_siorg_n04 VARCHAR(500),
+        co_siorg_n05 VARCHAR(20),
+        ds_siorg_n05 VARCHAR(500),
+        co_siorg_n06 VARCHAR(20),
+        ds_siorg_n06 VARCHAR(500),
+        co_siorg_n07 VARCHAR(20),
+        ds_siorg_n07 VARCHAR(500),
+        me_referencia INTEGER NOT NULL,
+        an_referencia INTEGER NOT NULL,
+        sg_mes_completo VARCHAR(20),
+        me_emissao INTEGER,
+        an_emissao INTEGER,
+        co_situacao_icc VARCHAR(20),
+        no_situacao_icc VARCHAR(500),
+        id_natureza_juridica_siorg VARCHAR(20),
+        ds_natureza_juridica_siorg VARCHAR(200),
+        id_categoria_economica_nade VARCHAR(20),
+        id_grupo_despesa_nade VARCHAR(20),
+        id_moap_nade VARCHAR(20),
+        id_elemento_despesa_nade VARCHAR(500),
+        id_subitem_nade VARCHAR(500),
+        co_natureza_despesa_deta VARCHAR(500),
+        no_natureza_despesa_deta VARCHAR(500),
+        id_esfera_orcamentaria VARCHAR(500),
+        no_esfera_orcamentaria VARCHAR(500),
+        id_in_resultado_eof VARCHAR(500),
+        no_in_resultado_eof VARCHAR(500),
+        va_custo DECIMAL(16,2)
+    )
+    DISTSTYLE AUTO;
+"""
+
+CREATE_DIM_COST_CENTERS = """
+    DROP TABLE IF EXISTS cost_centers;
+
+    CREATE TABLE cost_centers AS (
+        SELECT
+            DISTINCT
+                COALESCE(
+                    IF(co_siorg_n07 != "-9", co_siorg_n07, NULL), 
+                    IF(co_siorg_n06 != "-9", co_siorg_n06, NULL), 
+                    IF(co_siorg_n05 != "-9", co_siorg_n05, NULL), 
+                    IF(co_siorg_n04 != "-9", co_siorg_n04, NULL)
+                ) AS id,
+                COALESCE(
+                    IF(co_siorg_n07 != "-9", ds_siorg_n07, NULL), 
+                    IF(co_siorg_n06 != "-9", ds_siorg_n06, NULL), 
+                    IF(co_siorg_n05 != "-9", ds_siorg_n05, NULL), 
+                    IF(co_siorg_n04 != "-9", ds_siorg_n04, NULL)
+                ) AS name
+        FROM
+            raw__public_expenses_data
+    );
+"""
+
+CREATE_DIM_COST_CENTERS_RELATIONSHIP = """
+    DROP TABLE IF EXISTS cost_centers_relationship;
+
+    CREATE TABLE cost_centers_relationship AS (
+        SELECT
+            DISTINCT
+                co_siorg_n04 AS first_level_cost_center,
+                COALESCE(
+                    IF(co_siorg_n05 != "-9", co_siorg_n05, NULL),
+                    co_siorg_n04
+                ) AS second_level_cost_center,
+                COALESCE(
+                    IF(co_siorg_n06 != "-9", co_siorg_n06, NULL),
+                    IF(co_siorg_n05 != "-9", co_siorg_n05, NULL),
+                    co_siorg_n04
+                ) AS third_level_cost_center,
+                COALESCE(
+                    IF(co_siorg_n07 != "-9", co_siorg_n07, NULL),
+                    IF(co_siorg_n06 != "-9", co_siorg_n06, NULL),
+                    IF(co_siorg_n05 != "-9", co_siorg_n05, NULL),
+                    co_siorg_n04
+                ) AS fourth_level_cost_center,
+        FROM
+            raw__public_expenses_data
+    );
+"""
+
+CREATE_DIM_EXPENSES = """
+    DROP TABLE IF EXISTS dim_expenses;
+
+    CREATE TABLE dim_expenses AS (
+        SELECT
+            SHA2(
+                CONCAT(
+                    co_situacao_icc, 
+                    co_natureza_despesa_deta,
+                    CAST(me_referencia AS VARCHAR),
+                    CAST(an_referencia AS VARCHAR),
+                    CAST(co_natureza_despesa_deta AS VARCHAR)
+                ),
+                256
+            ) AS id,
+            an_reference AS reference_year,
+            me_referencia AS reference_month,
+            COALESCE(
+                IF(co_siorg_n07 != "-9", co_siorg_n07, NULL), 
+                IF(co_siorg_n06 != "-9", co_siorg_n06, NULL), 
+                IF(co_siorg_n05 != "-9", co_siorg_n05, NULL), 
+                IF(co_siorg_n04 != "-9", co_siorg_n04, NULL)
+            ) AS cost_center,
+            no_esfera_orcamentaria AS expense_category,
+            no_natureza_despesa_deta AS expense_detail,
+            va_custo AS expense_value
+        FROM
+            raw__public_expenses_data
+    );
+"""
+
+CREATE_FACT_MONTHLY_EXPENSES = """
+    DROP TABLE IF EXISTS fact_monthly_expenses;
+
+    CREATE TABLE fact_monthly_expenses AS (
+        SELECT
+            reference_year,
+            reference_month,
+            first_level_cost_center,
+            second_level_cost_center,
+            third_level_cost_center,
+            fourth_level_cost_center,
+            SUM(cost) AS total_expense,
+            AVG(cost) AS average_expense
+        FROM
+            dim_expenses
+        LEFT JOIN
+            cost_centers_relationship ON dim_expenses.cost_center = cost_centers_relationship.fourth_level_cost_center
+        GROUP BY 
+            reference_year,
+            reference_month,
+            first_level_cost_center,
+            second_level_cost_center,
+            third_level_cost_center,
+            fourth_level_cost_center
+    );
+"""

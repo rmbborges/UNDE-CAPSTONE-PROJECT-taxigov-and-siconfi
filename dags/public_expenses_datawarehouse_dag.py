@@ -30,20 +30,20 @@ def check_dependencies(*args, **kwargs):
     logging.info(f"Data Quality for table {table} checks passed.")
 
 dag = DAG(
-    "create_and_populate_taxigov_datawarehouse",
+    "create_and_populate_public_expenses_datawarehouse",
     default_args=default_args,
-    description="Create the taxigov datawarehouse tables",
+    description="Create public expenses datawarehouse tables",
     max_active_runs=1,
     schedule_interval="@monthly"
 )
 
-check_raw_taxigov_quality_task = PythonOperator(
-    task_id="check_taxigov_data",
+check_raw_public_expenses_quality_task = PythonOperator(
+    task_id="check_raw_public_expenses_data",
     dag=dag,
     python_callable=check_dependencies,
     provide_context=True,
     params={
-        "table": "raw__taxigov_corridas",
+        "table": "raw__public_expenses_data",
     }
 )
 

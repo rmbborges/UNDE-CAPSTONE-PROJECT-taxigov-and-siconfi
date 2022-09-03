@@ -37,20 +37,21 @@ CREATE_DIM_REQUESTS_TABLE = """
 
     CREATE TABLE dim_requests AS ( 
         SELECT
-            SHA2(
-                CONCAT(
-                    CAST(data_abertura AS VARCHAR), 
-                    nome_orgao
-                ),
-                256
-            ) AS id,
-            UPPER(nome_orgao) AS requested_by,
-            data_abertura AS requested_at,
-            data_despacho AS approved_at,
-            UPPER(motivo_corrida) AS reason,
-            destino_solicitado_latitude AS requested_dropoff_latitude,
-            destino_solicitado_longitude AS requested_dropoff_longitude,
-            conteste_info AS commentary
+            DISTINCT
+                SHA2(
+                    CONCAT(
+                        CAST(data_abertura AS VARCHAR), 
+                        nome_orgao
+                    ),
+                    256
+                ) AS id,
+                UPPER(nome_orgao) AS requested_by,
+                data_abertura AS requested_at,
+                data_despacho AS approved_at,
+                UPPER(motivo_corrida) AS reason,
+                destino_solicitado_latitude AS requested_dropoff_latitude,
+                destino_solicitado_longitude AS requested_dropoff_longitude,
+                conteste_info AS commentary
         FROM
             raw__taxigov_corridas
     );
@@ -62,7 +63,13 @@ CREATE_DIM_RIDES_TABLE = """
     CREATE TABLE dim_rides AS ( 
         SELECT
             SHA2(
-                qru_corrida,
+                CONCAT(
+                    CAST(qru_corrida AS VARCHAR),
+                    COALESCE(
+                        CAST(destino_efetivo_longitude AS VARCHAR),
+                        "UNKNOWN_DESTINATION"
+                    )
+                ),
                 256
             ) AS id,
             SHA2(
@@ -127,6 +134,10 @@ CREATE_DIM_DATES_TABLE = """
         
         SELECT
             DISTINCT
+                SHA2(
+                    CAST(ts AS VARCHAR),
+                    256
+                ) AS id,
                 ts,
                 DATE(ts) AS date,
                 EXTRACT(MONTH FROM ts) AS month,
@@ -232,16 +243,16 @@ CREATE_DIM_COST_CENTERS = """
         SELECT
             DISTINCT
                 COALESCE(
-                    IF(co_siorg_n07 != "-9", co_siorg_n07, NULL), 
-                    IF(co_siorg_n06 != "-9", co_siorg_n06, NULL), 
-                    IF(co_siorg_n05 != "-9", co_siorg_n05, NULL), 
-                    IF(co_siorg_n04 != "-9", co_siorg_n04, NULL)
+                    CASE WHEN co_siorg_n07 != '-9' THEN co_siorg_n07 ELSE NULL END,
+                    CASE WHEN co_siorg_n06 != '-9' THEN co_siorg_n06 ELSE NULL END,
+                    CASE WHEN co_siorg_n05 != '-9' THEN co_siorg_n05 ELSE NULL END,
+                    CASE WHEN co_siorg_n04 != '-9' THEN co_siorg_n04 ELSE NULL END
                 ) AS id,
                 COALESCE(
-                    IF(co_siorg_n07 != "-9", ds_siorg_n07, NULL), 
-                    IF(co_siorg_n06 != "-9", ds_siorg_n06, NULL), 
-                    IF(co_siorg_n05 != "-9", ds_siorg_n05, NULL), 
-                    IF(co_siorg_n04 != "-9", ds_siorg_n04, NULL)
+                    CASE WHEN co_siorg_n07 != '-9' THEN ds_siorg_n07 ELSE NULL END,
+                    CASE WHEN co_siorg_n06 != '-9' THEN ds_siorg_n06 ELSE NULL END,
+                    CASE WHEN co_siorg_n05 != '-9' THEN ds_siorg_n05 ELSE NULL END,
+                    CASE WHEN co_siorg_n04 != '-9' THEN ds_siorg_n04 ELSE NULL END
                 ) AS name
         FROM
             raw__public_expenses_data
@@ -252,26 +263,47 @@ CREATE_DIM_COST_CENTERS_RELATIONSHIP = """
     DROP TABLE IF EXISTS dim_cost_centers_relationship;
 
     CREATE TABLE dim_cost_centers_relationship AS (
+        WITH
+        relationship_base AS (
+            SELECT
+                DISTINCT
+                    co_siorg_n04 AS first_level_cost_center,
+                    COALESCE(
+                        CASE WHEN co_siorg_n05 != '-9' THEN co_siorg_n05 ELSE NULL END,
+                        co_siorg_n04
+                    ) AS second_level_cost_center,
+                    COALESCE(
+                        CASE WHEN co_siorg_n06 != '-9' THEN co_siorg_n06 ELSE NULL END,
+                        CASE WHEN co_siorg_n05 != '-9' THEN co_siorg_n05 ELSE NULL END,
+                        co_siorg_n04
+                    ) AS third_level_cost_center,
+                    COALESCE(
+                        CASE WHEN co_siorg_n07 != '-9' THEN co_siorg_n07 ELSE NULL END,
+                        CASE WHEN co_siorg_n06 != '-9' THEN co_siorg_n06 ELSE NULL END,
+                        CASE WHEN co_siorg_n05 != '-9' THEN co_siorg_n05 ELSE NULL END,
+                        co_siorg_n04
+                    ) AS fourth_level_cost_center
+            FROM
+                raw__public_expenses_data
+        )
+
         SELECT
-            DISTINCT
-                co_siorg_n04 AS first_level_cost_center,
-                COALESCE(
-                    IF(co_siorg_n05 != "-9", co_siorg_n05, NULL),
-                    co_siorg_n04
-                ) AS second_level_cost_center,
-                COALESCE(
-                    IF(co_siorg_n06 != "-9", co_siorg_n06, NULL),
-                    IF(co_siorg_n05 != "-9", co_siorg_n05, NULL),
-                    co_siorg_n04
-                ) AS third_level_cost_center,
-                COALESCE(
-                    IF(co_siorg_n07 != "-9", co_siorg_n07, NULL),
-                    IF(co_siorg_n06 != "-9", co_siorg_n06, NULL),
-                    IF(co_siorg_n05 != "-9", co_siorg_n05, NULL),
-                    co_siorg_n04
-                ) AS fourth_level_cost_center,
+            SHA2(
+                CONCAT(
+                    CAST(first_level_cost_center AS VARCHAR), 
+                    CONCAT(
+                        CAST(second_level_cost_center AS VARCHAR),
+                        CONCAT(
+                            CAST(third_level_cost_center AS VARCHAR),
+                            CAST(fourth_level_cost_center AS VARCHAR)
+                        )
+                    )
+                ),
+                256
+            ) AS id,
+            relationship_base.*
         FROM
-            raw__public_expenses_data
+            relationship_base
     );
 """
 
@@ -280,23 +312,30 @@ CREATE_DIM_EXPENSES = """
 
     CREATE TABLE dim_expenses AS (
         SELECT
+            ROW_NUMBER() OVER() AS id,
             SHA2(
                 CONCAT(
-                    co_situacao_icc, 
-                    co_natureza_despesa_deta,
-                    CAST(me_referencia AS VARCHAR),
-                    CAST(an_referencia AS VARCHAR),
-                    CAST(co_natureza_despesa_deta AS VARCHAR)
+                    CAST(co_situacao_icc AS VARCHAR), 
+                    CONCAT(
+                        CAST(co_natureza_despesa_deta AS VARCHAR),
+                        CONCAT(
+                            CAST(me_referencia AS VARCHAR),
+                            CONCAT(
+                                CAST(an_referencia AS VARCHAR),
+                                CAST(co_natureza_despesa_deta AS VARCHAR)
+                            )
+                        )
+                    )
                 ),
                 256
             ) AS id,
-            an_reference AS reference_year,
+            an_referencia AS reference_year,
             me_referencia AS reference_month,
             COALESCE(
-                IF(co_siorg_n07 != "-9", co_siorg_n07, NULL), 
-                IF(co_siorg_n06 != "-9", co_siorg_n06, NULL), 
-                IF(co_siorg_n05 != "-9", co_siorg_n05, NULL), 
-                IF(co_siorg_n04 != "-9", co_siorg_n04, NULL)
+                CASE WHEN co_siorg_n07 != '-9' THEN co_siorg_n07 ELSE NULL END,
+                CASE WHEN co_siorg_n06 != '-9' THEN co_siorg_n06 ELSE NULL END,
+                CASE WHEN co_siorg_n05 != '-9' THEN co_siorg_n05 ELSE NULL END,
+                co_siorg_n04
             ) AS cost_center,
             no_esfera_orcamentaria AS expense_category,
             no_natureza_despesa_deta AS expense_detail,
@@ -317,8 +356,8 @@ CREATE_FACT_MONTHLY_EXPENSES = """
             second_level_cost_center,
             third_level_cost_center,
             fourth_level_cost_center,
-            SUM(cost) AS total_expense,
-            AVG(cost) AS average_expense
+            SUM(expense_value) AS total_expense,
+            AVG(expense_value) AS average_expense
         FROM
             dim_expenses
         LEFT JOIN

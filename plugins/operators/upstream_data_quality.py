@@ -5,7 +5,7 @@ from airflow.models import BaseOperator
 from airflow.utils.decorators import apply_defaults
 
 
-class DataQualityOperator(BaseOperator):
+class UpstreamDependencyCheckOperator(BaseOperator):
 
     @apply_defaults
     def __init__(self,
@@ -13,7 +13,7 @@ class DataQualityOperator(BaseOperator):
                  table="",
                  *args, **kwargs):
 
-        super(DataQualityOperator, self).__init__(*args, **kwargs)
+        super(UpstreamDependencyCheckOperator, self).__init__(*args, **kwargs)
         self.table = table
         self.postgres_conn_id = postgres_conn_id
 

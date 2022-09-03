@@ -1,5 +1,6 @@
-from operators.data_quality import DataQualityOperator
+from operators.upstream_data_quality import (UpstreamDependencyCheckOperator, UniqueKeyCheckOperator)
 
 __all__ = [
-    "DataQualityOperator"
+    "UniqueKeyCheckOperator",
+    "UpstreamDependencyCheckOperator"
 ]

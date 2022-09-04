@@ -35,7 +35,7 @@ CREATE_RAW__TAXIGOV_CORRIDAS_TABLE = """
 CREATE_DIM_REQUESTS_TABLE = """
     DROP TABLE IF EXISTS dim_requests;
 
-    CREATE TABLE dim_requests AS ( 
+    CREATE TABLE dim_requests AS (
         SELECT
             DISTINCT
                 SHA2(
@@ -52,43 +52,71 @@ CREATE_DIM_REQUESTS_TABLE = """
                 destino_solicitado_latitude AS requested_dropoff_latitude,
                 destino_solicitado_longitude AS requested_dropoff_longitude,
                 conteste_info AS commentary
-        FROM
-            raw__taxigov_corridas
+            FROM
+                raw__taxigov_corridas
     );
 """
 
 CREATE_DIM_RIDES_TABLE = """
     DROP TABLE IF EXISTS dim_rides;
 
-    CREATE TABLE dim_rides AS ( 
+    CREATE TABLE dim_rides AS (
+        WITH 
+        dim_rides_base AS (
+            SELECT
+                SHA2(
+                    CONCAT(
+                        CAST(qru_corrida AS VARCHAR),
+                        COALESCE(
+                            CAST(destino_efetivo_longitude AS VARCHAR),
+                            'UNKNOWN_DESTINATION'
+                        )
+                    ),
+                    256
+                ) AS id,
+                SHA2(
+                    CONCAT(
+                        CAST(data_abertura AS VARCHAR), 
+                        nome_orgao
+                    ),
+                    256
+                ) AS request_id,
+                data_inicio AS started_at,
+                data_final AS ended_at,
+                origem_latitude AS pickup_latitude,
+                origem_longitude AS pickup_longitude,
+                destino_efetivo_latitude AS dropoff_latitude,
+                destino_efetivo_longitude AS dropoff_longitude,
+                km_total AS distance,
+                valor_corrida AS cost
+            FROM
+                raw__taxigov_corridas
+            WHERE
+                distance > 0
+        ),
+        with_row_number AS (
+            SELECT
+                *,
+                ROW_NUMBER() OVER(PARTITION BY id) AS rn
+            FROM
+                dim_rides_base
+        )
+
         SELECT
-            SHA2(
-                CONCAT(
-                    CAST(qru_corrida AS VARCHAR),
-                    COALESCE(
-                        CAST(destino_efetivo_longitude AS VARCHAR),
-                        "UNKNOWN_DESTINATION"
-                    )
-                ),
-                256
-            ) AS id,
-            SHA2(
-                CONCAT(
-                    CAST(data_abertura AS VARCHAR), 
-                    nome_orgao
-                ),
-                256
-            ) AS request_id,
-            data_inicio AS started_at,
-            data_final AS ended_at,
-            origem_latitude AS pickup_latitude,
-            origem_longitude AS pickup_longitude,
-            destino_efetivo_latitude AS dropoff_latitude,
-            destino_efetivo_longitude AS dropoff_longitude,
-            km_total AS distance,
-            valor_corrida AS cost
+            id,
+            request_id,
+            started_at,
+            ended_at,
+            pickup_latitude,
+            pickup_longitude,
+            dropoff_latitude,
+            dropoff_longitude,
+            distance,
+            cost
         FROM
-            raw__taxigov_corridas
+            with_row_number
+        WHERE
+            rn = 1
     );
 """
 
@@ -131,11 +159,13 @@ CREATE_DIM_DATES_TABLE = """
             FROM
                 raw__taxigov_corridas
         )
-        
         SELECT
             DISTINCT
                 SHA2(
-                    CAST(ts AS VARCHAR),
+                    COALESCE(
+                        CAST(ts AS VARCHAR),
+                        ''
+                    ),
                     256
                 ) AS id,
                 ts,
@@ -240,22 +270,42 @@ CREATE_DIM_COST_CENTERS = """
     DROP TABLE IF EXISTS dim_cost_centers;
 
     CREATE TABLE dim_cost_centers AS (
+        WITH
+        cost_centers_base AS (
+            SELECT
+                DISTINCT
+                    COALESCE(
+                        CASE WHEN co_siorg_n07 != '-9' THEN co_siorg_n07 ELSE NULL END,
+                        CASE WHEN co_siorg_n06 != '-9' THEN co_siorg_n06 ELSE NULL END,
+                        CASE WHEN co_siorg_n05 != '-9' THEN co_siorg_n05 ELSE NULL END,
+                        CASE WHEN co_siorg_n04 != '-9' THEN co_siorg_n04 ELSE NULL END,
+                        ''
+                    ) AS id,
+                    COALESCE(
+                        CASE WHEN co_siorg_n07 != '-9' THEN ds_siorg_n07 ELSE NULL END,
+                        CASE WHEN co_siorg_n06 != '-9' THEN ds_siorg_n06 ELSE NULL END,
+                        CASE WHEN co_siorg_n05 != '-9' THEN ds_siorg_n05 ELSE NULL END,
+                        CASE WHEN co_siorg_n04 != '-9' THEN ds_siorg_n04 ELSE NULL END,
+                        ''
+                    ) AS name
+            FROM
+                raw__public_expenses_data
+        ),
+        with_row_number AS (
+            SELECT
+                *,
+                ROW_NUMBER() OVER(PARTITION BY id) AS rn
+            FROM
+                cost_centers_base
+        )
+
         SELECT
-            DISTINCT
-                COALESCE(
-                    CASE WHEN co_siorg_n07 != '-9' THEN co_siorg_n07 ELSE NULL END,
-                    CASE WHEN co_siorg_n06 != '-9' THEN co_siorg_n06 ELSE NULL END,
-                    CASE WHEN co_siorg_n05 != '-9' THEN co_siorg_n05 ELSE NULL END,
-                    CASE WHEN co_siorg_n04 != '-9' THEN co_siorg_n04 ELSE NULL END
-                ) AS id,
-                COALESCE(
-                    CASE WHEN co_siorg_n07 != '-9' THEN ds_siorg_n07 ELSE NULL END,
-                    CASE WHEN co_siorg_n06 != '-9' THEN ds_siorg_n06 ELSE NULL END,
-                    CASE WHEN co_siorg_n05 != '-9' THEN ds_siorg_n05 ELSE NULL END,
-                    CASE WHEN co_siorg_n04 != '-9' THEN ds_siorg_n04 ELSE NULL END
-                ) AS name
+            id,
+            name
         FROM
-            raw__public_expenses_data
+            with_row_number
+        WHERE
+            rn = 1
     );
 """
 
@@ -311,37 +361,62 @@ CREATE_DIM_EXPENSES = """
     DROP TABLE IF EXISTS dim_expenses;
 
     CREATE TABLE dim_expenses AS (
-        SELECT
-            ROW_NUMBER() OVER() AS id,
-            SHA2(
-                CONCAT(
-                    CAST(co_situacao_icc AS VARCHAR), 
-                    CONCAT(
-                        CAST(co_natureza_despesa_deta AS VARCHAR),
+        WITH
+        expenses_base AS (
+            SELECT
+                DISTINCT
+                    SHA2(
                         CONCAT(
-                            CAST(me_referencia AS VARCHAR),
+                            CAST(co_situacao_icc AS VARCHAR), 
                             CONCAT(
-                                CAST(an_referencia AS VARCHAR),
-                                CAST(co_natureza_despesa_deta AS VARCHAR)
+                                CAST(co_natureza_despesa_deta AS VARCHAR),
+                                CONCAT(
+                                    CAST(me_referencia AS VARCHAR),
+                                    CONCAT(
+                                        CAST(an_referencia AS VARCHAR),
+                                        CAST(co_natureza_despesa_deta AS VARCHAR)
+                                    )
+                                )
                             )
-                        )
-                    )
-                ),
-                256
-            ) AS id,
-            an_referencia AS reference_year,
-            me_referencia AS reference_month,
-            COALESCE(
-                CASE WHEN co_siorg_n07 != '-9' THEN co_siorg_n07 ELSE NULL END,
-                CASE WHEN co_siorg_n06 != '-9' THEN co_siorg_n06 ELSE NULL END,
-                CASE WHEN co_siorg_n05 != '-9' THEN co_siorg_n05 ELSE NULL END,
-                co_siorg_n04
-            ) AS cost_center,
-            no_esfera_orcamentaria AS expense_category,
-            no_natureza_despesa_deta AS expense_detail,
-            va_custo AS expense_value
+                        ),
+                        256
+                    ) AS id,
+                    an_referencia AS reference_year,
+                    me_referencia AS reference_month,
+                    COALESCE(
+                        CASE WHEN co_siorg_n07 != '-9' THEN co_siorg_n07 ELSE NULL END,
+                        CASE WHEN co_siorg_n06 != '-9' THEN co_siorg_n06 ELSE NULL END,
+                        CASE WHEN co_siorg_n05 != '-9' THEN co_siorg_n05 ELSE NULL END,
+                        co_siorg_n04
+                    ) AS cost_center,
+                    no_esfera_orcamentaria AS expense_category,
+                    no_natureza_despesa_deta AS expense_detail,
+                    va_custo AS expense_value
+                FROM
+                    raw__public_expenses_data
+                WHERE
+                    va_custo > 0
+        ),
+        with_row_number AS (
+            SELECT
+                *,
+                ROW_NUMBER() OVER(PARTITION BY id) AS rn
         FROM
-            raw__public_expenses_data
+            expenses_base
+        )
+
+        SELECT
+            id,
+            reference_year,
+            reference_month,
+            cost_center,
+            expense_category,
+            expense_detail,
+            expense_value
+        FROM
+            with_row_number
+        WHERE
+            rn = 1
     );
 """
 
@@ -356,8 +431,7 @@ CREATE_FACT_MONTHLY_EXPENSES = """
             second_level_cost_center,
             third_level_cost_center,
             fourth_level_cost_center,
-            SUM(expense_value) AS total_expense,
-            AVG(expense_value) AS average_expense
+            SUM(expense_value) AS total_expense
         FROM
             dim_expenses
         LEFT JOIN

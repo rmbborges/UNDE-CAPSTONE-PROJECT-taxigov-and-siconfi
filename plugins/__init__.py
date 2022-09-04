@@ -8,5 +8,6 @@ import operators
 class DataQualityPlugin(AirflowPlugin):
     name = "data_quality_plugin"
     operators = [
-        operators.DataQualityOperator
+        operators.UpstreamDependencyCheckOperator,
+        operators.UniqueKeyCheckOperator
     ]

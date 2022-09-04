@@ -23,7 +23,7 @@ dag = DAG(
     default_args=default_args,
     description="Create the taxigov datawarehouse tables",
     max_active_runs=1,
-    schedule_interval="@monthly"
+    schedule_interval="@daily"
 )
 
 check_raw_taxigov_task = UpstreamDependencyCheckOperator(

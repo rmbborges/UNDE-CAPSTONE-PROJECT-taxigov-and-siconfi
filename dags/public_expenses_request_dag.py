@@ -72,7 +72,7 @@ dag = DAG(
     default_args=default_args,
     description="Requests siconfi expenses data, stores it in S3 and populate raw__public_expenses_data table in Redshift",
     max_active_runs=1,
-    schedule_interval="@monthly"
+    schedule_interval="@daily"
 )
 
 save_public_expenses_data_to_s3_task = PythonOperator(

@@ -41,7 +41,7 @@ dag = DAG(
     default_args=default_args,
     description="Requests taxigov data, stores it in S3 and populate raw__taxigov_corridas table in Redshift",
     max_active_runs=1,
-    schedule_interval="@monthly"
+    schedule_interval="@daily"
 )
 
 create_object_task = S3CreateObjectOperator(
@@ -70,6 +70,8 @@ transfer_s3_to_redshift_task = S3ToRedshiftOperator(
     schema="PUBLIC",
     table="raw__taxigov_corridas",
     copy_options=["csv", "IGNOREHEADER 1", "MAXERROR 100"],
+    method="UPSERT",
+    upsert_keys=["base_origem", "qru_corrida"],
     dag=dag
 )
 

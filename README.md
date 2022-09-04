@@ -73,12 +73,39 @@ For the Connections, two connections must be created: `aws_credentials` (Connect
 
 There are four dags in this project: 
 
-1. `public_expenses_request_data.py`:
+1. `public_expenses_request_data`:
     
-     - Request data from Siconfi API for Treasury Department in the current `month` and `year`;
-     - Stores the response JSON data in S3 (the JSON format is ready for Redshift `json 'auto'` copy options);
-     - Creates `raw__public_expenses_data` Redshift table, if not exists already;
-     - Populate, via UPSERT for the keys, `co_situacao_icc`, `me_referencia`, `an_referencia` and `co_natureza_despesa_deta`) `raw__public_expenses_data` Redshift talbe with the requested data.
+    - Request data from Siconfi API for Treasury Department in the current `month` and `year`;
+    - Stores the JSON response data in S3 (the JSON format is ready for Redshift `json 'auto'` copy options);
+    - Creates `raw__public_expenses_data` Redshift table, if the table already not exists;
+    - Populate `raw__public_expenses_data` Redshift table, via UPSERT for the unique keys `co_situacao_icc`, `me_referencia`, `an_referencia` and `co_natureza_despesa_deta`) with the requested data.
 
-2. `taxigov_request_dag.py`: 
-    
+<br/>
+
+2. `taxigov_request_dag`: 
+
+    - Request data from Taxigov rides data. It requests the complete historical data and extract the zipped `taxigov_corridas.csv` file;
+    - Stores the extracted CSV file in S3;
+    - Creates `raw__taxigov_corridas` Redshift table, if the table already not exists;
+    - Insert into `raw__taxigov_corridas` Redshift table, via UPSERT for the unique keys `base_origem` and `qru_corrida`.
+
+<br/>
+
+3. `public_expenses_datawarehouse_dag`:
+
+    - Checks for upstream dependency of `raw__public_expenses_data` table (existance and populated rows) through `UpstreamDependencyCheckOperator`;
+    - If the upstream dependency check is sucessful, it creates `dim_expenses`, `dim_cost_centers` and `dim_cost_centers_relationship` dimension tables from `raw__public_expenses_data` table;
+    - Checks if all `id` columns created for the dimension tables are unique through `UniqueKeyCheckOperator`; 
+    - If the unique key check is sucessful, it creates `fact_monthly_expenses` table with monthly aggregated expense data for the hierarchical cost centers relationship.
+
+<br/>
+
+4. `taxigov_datawarehouse_dag`:
+
+    - Checks for upstream dependency of `raw__taxigov_corridas` table (existance and populated rows) through `UpstreamDependencyCheckOperator`;
+    - If the upstream dependency check is sucessful, it creates `dim_rides`, `dim_dates` and `dim_requests` dimension tables from `raw__taxigov_corridas` table;
+    - Checks if all `id` columns created for the dimension tables are unique through `UniqueKeyCheckOperator`; 
+    - If the unique key check is sucessful, it creates `fact_daily_rides` table with daily aggregated requested taxi rides.
+
+
+

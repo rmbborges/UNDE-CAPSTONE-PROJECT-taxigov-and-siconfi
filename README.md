@@ -149,7 +149,7 @@ There are four dags in this project:
     | fouth_level_cost_center | VARCHAR | ID of the lowest level hierarchy of the cost center. Its a FK for dim_cost_centers table | 
     | total_expense_value | NUMERIC | Total expense of this cost center in this month |
 
-![alt text](https://github.com/rmbborges/UNDE-CAPSTONE-PROJECT-taxigov-and-siconfi/blob/master/expense_table_schema.png?raw=true)
+![Expense Table Schema](https://github.com/rmbborges/UNDE-CAPSTONE-PROJECT-taxigov-and-siconfi/blob/main/expense_table_schema.png?raw=true)
 
 ### Taxigov Datawarehouse
 1. dim_requests: Table with all Taxigov ride requests.
@@ -206,4 +206,4 @@ There are four dags in this project:
     | average_ride_cost | NUMERIC | Average cost in BRL of rides | 
     | average_ride_distance | INTEGER | Average distance in kilometers of rides | 
 
-![alt text](https://github.com/rmbborges/UNDE-CAPSTONE-PROJECT-taxigov-and-siconfi/blob/master/taxigov_table_schema.png?raw=true)
+![Rides Table Schema](https://github.com/rmbborges/UNDE-CAPSTONE-PROJECT-taxigov-and-siconfi/blob/main/taxigov_table_schema.png?raw=true)

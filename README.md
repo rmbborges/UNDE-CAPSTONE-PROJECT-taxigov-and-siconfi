@@ -1,5 +1,3 @@
-# [WIP]
-
 # Capstone Project for Udacity Data Engineering Nanodegree
 ## Purpose
 

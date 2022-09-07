@@ -107,5 +107,105 @@ There are four dags in this project:
     - Checks if all `id` columns created for the dimension tables are unique through `UniqueKeyCheckOperator`; 
     - If the unique key check is sucessful, it creates `fact_daily_rides` table with daily aggregated requested taxi rides.
 
+## Tables Schema
 
+### Public Expense Datawarehouse
+1. dim_expenses: Table with all government expense events.
+  
+    |  Column | Type | Description |
+    | --------- | ------ | ------------- | 
+    | id | VARCHAR | Unique key for this table |
+    | reference_year | INTEGER | Competence year of expense event  |
+    | reference_month | INTEGER | Competence month of expense event |
+    | cost_center | VARCHAR | Siconfi Cost Center |
+    | expense_category | VARCHAR | Category of the expense event |
+    | expense_detail | INTEGER | Nature of the expense event | 
+    | expense_value | NUMERIC | Value in BRL of government public expense |
 
+2. dim_cost_centers: Table with all Siconfi Cost Center.
+  
+    |  Column | Type | Description |
+    | --------- | ------ | ------------- | 
+    | id | VARCHAR | Unique key for this table. It's the Siconfi Cost Center ID |
+    | name | VARCHAR | Cost center name |
+
+3. dim_cost_centers_relationship: Table with all Siconfi Cost Center hierarchy. 
+  
+    |  Column | Type | Description |
+    | --------- | ------ | ------------- | 
+    | id | VARCHAR | Unique key for this table |
+    | first_level_cost_center | VARCHAR | ID of the highest level hierarchy of the cost center |
+    | second_level_cost_center | VARCHAR | ID of the second level hierarchy of the cost center |
+    | third_level_cost_center | VARCHAR | ID of the third level hierarchy of the cost center |
+    | fouth_level_cost_center | VARCHAR | ID of the lowest level hierarchy of the cost center. Its a FK for dim_cost_centers table |
+
+4. fact_monthly_expenses: Table with monthly aggregated data for a Siconfi cost center. 
+  
+    |  Column | Type | Description |
+    | --------- | ------ | ------------- | 
+    | reference_month | INTEGER | Competence month |
+    | reference_year | INTEGER | Competence year |
+    | first_level_cost_center | VARCHAR | ID of the first level hierarchy of the cost center |
+    | second_level_cost_center | VARCHAR | ID of the second level hierarchy of the cost center |
+    | third_level_cost_center | VARCHAR | ID of the third level hierarchy of the cost center |
+    | fouth_level_cost_center | VARCHAR | ID of the lowest level hierarchy of the cost center. Its a FK for dim_cost_centers table | 
+    | total_expense_value | NUMERIC | Total expense of this cost center in this month |
+
+![alt text](https://github.com/rmbborges/UNDE-CAPSTONE-PROJECT-taxigov-and-siconfi/blob/master/expense_table_schema.png?raw=true)
+
+### Taxigov Datawarehouse
+1. dim_requests: Table with all Taxigov ride requests.
+  
+    |  Column | Type | Description |
+    | --------- | ------ | ------------- | 
+    | id | VARCHAR | Unique key for this table |
+    | requested_by | TIMESTAMP | Government Agency that created this request  |
+    | requested_at | TIMESTAMP | Timestamp of the request submission |
+    | approved_at | TIMESTAMP | Timestamp of the request approval |
+    | reason | VARCHAR | Category of the request nature |
+    | requested_dropoff_latitude | NUMERIC | Requested dropoff latitude in Taxigov app | 
+    | requested_dropoff_longitude | NUMERIC | Requested dropoff longitude in Taxigov app |
+    | commentary | VARCHAR | Request approver commentary |
+
+2. dim_rides: The effective ride (created from a request)
+  
+    |  Column | Type | Description |
+    | --------- | ------ | ------------- | 
+    | id | VARCHAR | Unique key for this table |
+    | request_id | VARCHAR | The request ID (FK dim_requests) |
+    | started_at | TIMESTAMP | Timestamp of the start of the ride |
+    | ended_at | TIMESTAMP | Timestamp of the end of the ride |
+    | pickup_latitude | NUMERIC | Ride pickup latitude |
+    | pickup_longitude | NUMERIC | Ride pickup longitude |
+    | dropoff_latitude | NUMERIC | Ride dropoff latitude |
+    | dropoff_longitude | NUMERIC | Ride dropoff longitude |
+    | distance | NUMERIC | The total distance of the ride in kilometers |
+    | cost | NUMERIC | Ride cost in BRL |
+
+3. dim_dates: Dimension table for date support. 
+  
+    |  Column | Type | Description |
+    | --------- | ------ | ------------- | 
+    | id | VARCHAR | Unique key for this table |
+    | ts | TIMESTAMP | Timestamp |
+    | date | DATE | Date of TS |
+    | month | INTEGER | Month of TS |
+    | year | INTEGER | Year of TS |
+    | day_of_week | INTEGER | The day of week (DOW) of TS |
+    | is_weekend | BOOLEAN | If this TS was a weekend |
+
+4. fact_daily_rides: Table with daily aggregated data of taxigov rides.
+  
+    |  Column | Type | Description |
+    | --------- | ------ | ------------- | 
+    | date | DATE | Date |
+    | ride_requests_count | INTEGER | Number of rides requests |
+    | rides_count | INTEGER | Number of rides |
+    | total_rides_cost | VARCHAR | Total cost in BRL of rides |
+    | average_cost_per_kilometer | NUMERIC | Average cost per ride kilometer |
+    | average_ride_duration | INTEGER | Average time, in minutes, of this ride | 
+    | average_ride_request_sla | INTEGER | Average time, in minutes, of this ride | 
+    | average_ride_cost | NUMERIC | Average cost in BRL of rides | 
+    | average_ride_distance | INTEGER | Average distance in kilometers of rides | 
+
+![alt text](https://github.com/rmbborges/UNDE-CAPSTONE-PROJECT-taxigov-and-siconfi/blob/master/taxigov_table_schema.png?raw=true)
